@@ -1,0 +1,63 @@
+<form
+  action="/join"
+  class="signup-form"
+  data-behaviour="sign-up"
+  method="POST"
+>
+  <ul class="polaroids">
+    <li
+      class="polaroid"
+    >
+      A picture of <span data-ui="city">Barcelona</span>
+    </li>
+    <li
+      class="polaroid"
+    >
+      A picture of <span data-ui="city">Barcelona</span>
+    </li>
+    <li
+      class="polaroid"
+    >
+      A picture of <span data-ui="city">Barcelona</span>
+    </li>
+  </ul>
+  <fieldset>
+    <h2>Help us to stop Brexit</h2>
+    <p>Join us at Best for Britain. We're campaigning and fighting to keep the UK open to EU membership.</p>
+    <p>Help us to stop Brexit and stop Brexit from taking away your freedom.</p>
+    <div class="form-field">
+      <label class="sr-only" for="chosen-name">First name</label>
+      <input
+        id="chosen-name"
+        name="chosen-name"
+        placeholder="First name"
+        {{!-- required --}}
+        type="text"
+      />
+    </div>
+    <div class="form-field">
+      <label class="sr-only" for="last-name">Last name</label>
+      <input
+        id="last-name"
+        name="last-name"
+        placeholder="Last name"
+        type="text"
+      />
+    </div>
+    <div class="form-field">
+      <label class="sr-only" for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Email" />
+    </div>
+    <div class="form-field checkbox">
+      <input
+        id="i-want-updates"
+        name="i-want-updates"
+        {{!-- required --}}
+        type="checkbox"
+        value="yes"
+      />
+      <label for="i-want-updates">Tick this box to get email updates on our campaign</label>
+    </div>
+    <button class="btn">Submit</button>
+  </fieldset>
+</form>

@@ -1,7 +1,14 @@
 .polaroids {
+  bottom: 0;
+  height: 100vh;
+  left: 0;
   list-style: none;
   margin: 0;
+  overflow: hidden;
   padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 
   .polaroid {
     background-color: #ccc;
@@ -9,7 +16,7 @@
     box-shadow: 3px 3px 11px 3px rgba(0, 0, 0, 0.2);
     display: block;
     height: 150px;
-    position: fixed;
+    position: absolute;
     text-indent: -9999px;
     width: 150px;
 
