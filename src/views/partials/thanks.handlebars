@@ -1,14 +1,16 @@
 <div class="thanks">
-  <h1>Thank you for joining us.</h1>
-  <p>Brexit can be stopped. It affects all of us and we are all already family, friends and communities. Read some of our stories below. </p>
-  <p>#freedomofmovement</p>
-  <ul class="stories">
-    {{#each stories}}
-    <li class="story">
-      <div class="avatar"></div>
-      <h2>{{this.name}}</h2>
-      <p>{{this.description}}</p>
-    </li>
-    {{/each}}
-  </ul>
+  <div class="copy">
+    <h1>Thank you for joining us.</h1>
+    <p>Brexit can be stopped. It affects all of us and we are all already family, friends and communities. Read some of our stories below. </p>
+    <p>#freedomofmovement</p>
+    <ul class="stories">
+      {{#each stories}}
+      <li class="story">
+        <div class="avatar"></div>
+        <h2 class="name">{{this.name}}</h2>
+        <p class="description">{{this.description}}</p>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
 </div>

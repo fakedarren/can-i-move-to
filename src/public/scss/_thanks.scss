@@ -1,17 +1,50 @@
 .thanks {
   background-image: linear-gradient(to bottom left, #fff,#42ffdf);
   display: none;
+  min-height: 100vh;
   padding: 20px;
+
+  h1 {
+    text-shadow: 0;
+  }
+
+  .copy {
+    margin: 0 auto;
+    max-width: 560px;
+  }
 
   .stories {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    padding: 20px 0 0;
   }
 
   .story {
     background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgba(18, 15, 15, 0.5);
     margin: 0 0 10px;
+    padding: 20px;
     text-align: left;
+
+    .avatar {
+      background: #ccc;
+      border-radius: 50%;
+      float: left;
+      height: 56px;
+      margin-right: 10px;
+      width: 56px;
+    }
+
+    .name {
+      font-size: 20px;
+      font-weight: 400;
+      margin: 0 0 10px;
+    }
+
+    .description {
+      font-size: 16px;
+      font-weight: 300;
+      margin: 0 0 0 66px;
+    }
   }
 }

@@ -31,7 +31,7 @@
         id="chosen-name"
         name="chosen-name"
         placeholder="First name"
-        {{!-- required --}}
+        required
         type="text"
       />
     </div>
@@ -46,13 +46,18 @@
     </div>
     <div class="form-field">
       <label class="sr-only" for="email">Email</label>
-      <input type="email" name="email" id="email" placeholder="Email" />
+      <input
+        id="email"
+        name="email"
+        placeholder="Email"
+        required
+        type="email"
+      />
     </div>
     <div class="form-field checkbox">
       <input
         id="i-want-updates"
         name="i-want-updates"
-        {{!-- required --}}
         type="checkbox"
         value="yes"
       />
