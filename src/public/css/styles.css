@@ -114,31 +114,37 @@ p {
     width: 150px; }
     .polaroids .polaroid:nth-child(1) {
       left: -57px;
-      transform: rotate(-19deg);
+      -webkit-transform: rotate(-19deg);
+              transform: rotate(-19deg);
       top: -14px; }
     .polaroids .polaroid:nth-child(2) {
       height: 160px;
       left: 33px;
-      transform: rotate(-12deg);
+      -webkit-transform: rotate(-12deg);
+              transform: rotate(-12deg);
       top: -61px;
       width: 160px; }
     .polaroids .polaroid:nth-child(3) {
       right: 3px;
-      transform: rotate(12deg);
+      -webkit-transform: rotate(12deg);
+              transform: rotate(12deg);
       top: -41px; }
     .polaroids .polaroid:nth-child(4) {
       bottom: 37px;
       left: -50px;
-      transform: rotate(-32deg); }
+      -webkit-transform: rotate(-32deg);
+              transform: rotate(-32deg); }
     .polaroids .polaroid:nth-child(5) {
       bottom: 17px;
       right: -33px;
-      transform: rotate(-8deg); }
+      -webkit-transform: rotate(-8deg);
+              transform: rotate(-8deg); }
     .polaroids .polaroid:nth-child(6) {
       bottom: -40px;
       height: 160px;
       left: 103px;
-      transform: rotate(-2deg);
+      -webkit-transform: rotate(-2deg);
+              transform: rotate(-2deg);
       width: 160px; }
 
 .signup-form {
@@ -208,7 +214,7 @@ p {
 .choose-city {
   background: transparent;
   border: 0;
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #000;
   font-family: inherit;
   font-size: inherit;
   font-weight: 300;
