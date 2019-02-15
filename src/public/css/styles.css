@@ -227,7 +227,7 @@ p {
   min-height: 100vh;
   padding: 20px; }
   .thanks h1 {
-    text-shadow: 0; }
+    text-shadow: none; }
   .thanks .copy {
     margin: 0 auto;
     max-width: 560px; }
