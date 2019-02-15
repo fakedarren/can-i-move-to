@@ -14,6 +14,7 @@ $(function(){
   
     $('.splash').css('display', 'none');
     $('.information').css('display', 'block');
+    $('body').scrollTop();
   });
 });
 
@@ -34,6 +35,7 @@ $(function(){
 
     $('.splash').css('display', '');
     $('.cities').css('display', 'none');
+    $('body').scrollTop();
   });
 });
 
@@ -45,6 +47,7 @@ $(function(){
 
     $('.information').css('display', 'none');
     $('.signup-form').css('display', 'block');
+    $('body').scrollTop();
   });
 });
 
@@ -56,5 +59,6 @@ $(function(){
 
     $('.signup-form').css('display', 'none');
     $('.thanks').css('display', 'block');
+    $('body').scrollTop();
   });
 });
