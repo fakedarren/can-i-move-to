@@ -1,0 +1,53 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  font-family: Lato, sans-serif;
+  max-height: 100vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+.wrapper {
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 0 40px;
+  text-shadow: 0 0 8px #fff;
+
+  .light {
+    font-weight: normal;
+  }
+}
+
+.btn {
+  background: #ff0164;
+  border: 0;
+  border-radius: 30px;
+  color: #fff;
+  display: inline-block;
+  font-family: Lato, sans-serif;
+  font-size: 32px;
+  padding: 10px 30px;
+}
+
+.sr-only {
+  left: -9999px;
+  position: absolute;
+}

@@ -1,0 +1,134 @@
+<div class="splash">
+  <ul class="polaroids">
+    <li class="polaroid">A picture of <span data-ui="city">Barcelona</span></li>
+    <li class="polaroid">A picture of <span data-ui="city">Barcelona</span></li>
+    <li class="polaroid">A picture of <span data-ui="city">Barcelona</span></li>
+    <li class="polaroid">A picture of <span data-ui="city">Barcelona</span></li>
+    <li class="polaroid">A picture of <span data-ui="city">Barcelona</span></li>
+    <li class="polaroid">A picture of <span data-ui="city">Barcelona</span></li>
+  </ul>
+  <div class="copy">
+    <h1>
+      Can I move to
+      <button
+        class="choose-city"
+        data-behaviour="go-to-choose-city"
+        type="button"
+      >
+        <span data-ui="city">Barcelona</span>
+      </button>
+      <span class="light">?</span>
+    </h1>
+    <button
+      class="take-action btn"
+      data-behaviour="go-to-information"
+      type="button"
+    >
+      Find out >
+    </button>
+    <p class="link"><a href="#">@canimovetobarcelona</a></p>
+  </div>
+</div>
+
+<div class="cities">
+  <p class="selected pill"><span data-ui="city">Barcelona</span></p>
+  <p class="pill-divider">or</p>
+  <ul class="list">
+    {{#each cities}}
+    <li class="list-item" data-city="{{this}}">
+      <button type="button" class="pill">{{this}}</button>
+    </li>
+    {{/each}}
+  </ul>
+</div>
+
+<div class="information">
+  <ul class="polaroids">
+    <li class="polaroid">A picture of <span data-ui="city">Barcelona</span></li>
+    <li class="polaroid">A picture of <span data-ui="city">Barcelona</span></li>
+    <li class="polaroid">A picture of <span data-ui="city">Barcelona</span></li>
+  </ul>
+  <h2>
+    <span class="sr-only">Can I move to <span data-ui="city">Barcelona</span>?</span> Yes.
+  </h2>
+  <h3>You can still move to <span data-ui="city">Barcelona</span>.</h3>
+  <p>As a UK and EU citizen, no matter your age, income or working status, you can go and live in any European city you choose. You can be a local in Lanzarote or a neighbour in Nice. All of Europe is your home.</p>
+  {{!-- <h3>If Brexit goes ahead, all this will change.</h3>
+  <p>By ending Freedom of Movement, your right to go and live anywhere ends. After Brexit you, your children, parents and grandparents will be treated the same as EU citizens coming here. You will need to earn a minimum - likely £30,000/year. That's a privilege for a few people, not a right for everyone.</p>
+  <h3>Don't let them take it away</h3>
+  <p>If you want to be able to keep your European citizenship and the amazing freedom it brings, help us to stop Brexit.</p> --}}
+  <button
+    class="btn i-want-to-help"
+    data-behaviour="go-to-sign-up"
+    type="button"
+  >
+    I want to help
+  </button>
+</div>
+
+<form
+  action="/join"
+  class="signup-form"
+  data-behaviour="sign-up"
+  method="POST"
+>
+  <ul class="polaroids">
+    <li class="polaroid">A picture of <span data-ui="city">Barcelona</span></li>
+    <li class="polaroid">A picture of <span data-ui="city">Barcelona</span></li>
+    <li class="polaroid">A picture of <span data-ui="city">Barcelona</span></li>
+  </ul>
+  <fieldset>
+    <h2>Help us to stop Brexit</h2>
+    <p>Join us at Best for Britain. We're campaigning and fighting to keep the UK open to EU membership.</p>
+    <p>Help us to stop Brexit and stop Brexit from taking away your freedom.</p>
+    <div class="form-field">
+      <label class="sr-only" for="chosen-name">First name</label>
+      <input
+        id="chosen-name"
+        name="chosen-name"
+        placeholder="First name"
+        {{!-- required --}}
+        type="text"
+      />
+    </div>
+    <div class="form-field">
+      <label class="sr-only" for="last-name">Last name</label>
+      <input
+        id="last-name"
+        name="last-name"
+        placeholder="Last name"
+        type="text"
+      />
+    </div>
+    <div class="form-field">
+      <label class="sr-only" for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Email" />
+    </div>
+    <div class="form-field checkbox">
+      <input
+        id="i-want-updates"
+        name="i-want-updates"
+        {{!-- required --}}
+        type="checkbox"
+        value="yes"
+      />
+      <label for="i-want-updates">Tick this box to get email updates on our campaign</label>
+    </div>
+    <button class="btn">Submit</button>
+  </fieldset>
+</form>
+
+<div class="thanks">
+  <h1>Thank you for joining us.</h1>
+  <p>Brexit can be stopped. It affects all of us and we are all already family, friends and communities. Read some of our stories below. </p>
+  <p>#freedomofmovement</p>
+  <ul class="stories">
+    {{#each stories}}
+    <li class="story">
+      <div class="avatar"></div>
+      <h2>{{this.name}}</h2>
+      <p>{{this.description}}</p>
+    </li>
+    {{/each}}
+  </ul>
+</div>

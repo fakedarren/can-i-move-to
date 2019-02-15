@@ -1,0 +1,56 @@
+.polaroids {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .polaroid {
+    background-color: #ccc;
+    border: 4px solid #fff;
+    box-shadow: 3px 3px 11px 3px rgba(0, 0, 0, 0.2);
+    display: block;
+    height: 150px;
+    position: fixed;
+    text-indent: -9999px;
+    width: 150px;
+
+    &:nth-child(1) {
+      left: -57px;
+      transform: rotate(-19deg);
+      top: -14px;
+    }
+
+    &:nth-child(2) {
+      height: 160px;
+      left: 33px;
+      transform: rotate(-12deg);
+      top: -61px;
+      width: 160px;
+    }
+
+    &:nth-child(3) {
+      right: 3px;
+      transform: rotate(12deg);
+      top: -41px;
+    }
+
+    &:nth-child(4) {
+      bottom: 37px;
+      left: -50px;
+      transform: rotate(-32deg);
+    }
+
+    &:nth-child(5) {
+      bottom: 17px;
+      right: -33px;
+      transform: rotate(-8deg);
+    }
+
+    &:nth-child(6) {
+      bottom: -40px;
+      height: 160px;
+      left: 103px;
+      transform: rotate(-2deg);
+      width: 160px;
+    }
+  }
+}

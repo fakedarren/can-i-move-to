@@ -1,0 +1,55 @@
+.cities {
+  display: none;
+
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .list-item {
+    display: inline-block;
+  }
+
+  .pill-divider {
+    margin: 0 auto;
+    position: relative;
+    width: 20px;
+
+    &:before,
+    &:after {
+      border-bottom: 2px solid #000;
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      width: 8px;
+    }
+
+    &:before {
+      left: -12px;
+    }
+
+    &:after {
+      right: 4px;
+    }
+  }
+
+  .pill {
+    background: transparent;
+    border: 2px solid #42ffdf;
+    border-radius: 30px;
+    display: inline-block;
+    color: #000;
+    font-family: inherit;
+    font-size: 16px;
+    height: 45px;
+    line-height: 41px;
+    margin: 0 10px 10px 0;
+    padding: 0 30px;
+
+    &.selected {
+      background: #42ffdf;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.signup-form {
+  display: none;
+  padding: 150px 20px 40px;
+
+  fieldset {
+    border: 0;
+  }
+
+  .form-field {
+    margin: 0 0 20px;
+  }
+
+  input[type=email],
+  input[type=text] {
+    border: 2px solid #000;
+    border-radius: 30px;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    height: 45px;
+    line-height: 41px;
+    padding: 0 30px;
+    width: 100%;
+  }
+
+  .checkbox {
+    position: relative;
+
+    input[type=checkbox] {
+      left: -9999px;
+      position: absolute;
+    }
+
+    label {
+      display: block;
+      padding-left: 30px;
+      text-align: left;
+
+      &:before {
+        border: 2px solid #000;
+        content: '';
+        display: block;
+        height: 20px;
+        left: 0;
+        position: absolute;
+        width: 20px;
+      }
+    }
+
+    :checked + label:before {
+      background: #333;
+    }
+  }
+}
