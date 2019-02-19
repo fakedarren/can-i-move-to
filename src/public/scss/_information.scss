@@ -1,11 +1,28 @@
 .information {
   display: none;
-  padding: 150px 20px 80px;
+  padding: 150px 20px 0;
 
   .copy {
     margin: 0 auto;
     max-width: 360px;
     position: relative;
     z-index: 2;
+  }
+
+  .i-want-to-join,
+  .i-want-to-tweet {
+    height: 44px;
+    line-height: 42px;
+    padding: 0 30px;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  .i-want-to-tweet {
+    background: #fff url('/img/twitter.png') no-repeat 6px 50%;
+    background-size: 32px;
+    border: 1px solid #1DA1F2;
+    color: #0070B5;
+    margin-top: 15px;
   }
 }

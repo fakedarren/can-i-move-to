@@ -5,8 +5,7 @@ $(function(){
   $('[data-behaviour="go-to-choose-city"]').on('click touchstart', function(evt){
     evt.preventDefault();
   
-    $('.splash').css('display', 'none');
-    $('.cities').css('display', 'block');
+    $('.cities').css('display', 'flex');
   });
 
   $('[data-behaviour="go-to-information"]').on('click touchstart', function(evt){
@@ -33,7 +32,6 @@ $(function(){
     $('.cities .list-item').css('display', '');
     $('.cities .list-item[data-city="' + selected + '"]').css('display', 'none');
 
-    $('.splash').css('display', '');
     $('.cities').css('display', 'none');
     $('body').scrollTop();
   });

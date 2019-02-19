@@ -51,3 +51,22 @@ p {
   left: -9999px;
   position: absolute;
 }
+
+footer {
+  background: #f8f6f6;
+  margin: 40px -20px 0;
+  padding: 18px 20px;
+
+  p {
+    color: #565656;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    margin: 0;
+    text-align: left;
+
+    a {
+      color: inherit;
+    }
+  }
+}

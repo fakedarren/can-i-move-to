@@ -1,11 +1,14 @@
 <div class="cities">
-  <p class="selected pill"><span data-ui="city">Barcelona</span></p>
-  <p class="pill-divider">or</p>
-  <ul class="list">
-    {{#each cities}}
-    <li class="list-item" data-city="{{this}}">
-      <button type="button" class="pill">{{this}}</button>
-    </li>
-    {{/each}}
-  </ul>
+  <div class="wrapper">
+    <p class="selected pill"><span data-ui="city">Barcelona</span></p>
+    <p class="pill-divider">or</p>
+    <ul class="list">
+      {{#each cities}}
+      <li class="list-item" data-city="{{this}}">
+        <button type="button" class="pill">{{this}}</button>
+      </li>
+      {{/each}}
+    </ul>
+    <p>...and all the places in between!</p>
+  </div>
 </div>

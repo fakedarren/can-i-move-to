@@ -14,15 +14,17 @@
     z-index: 100;
   }
 
-  .link {
-    color: #000;
+  .twitter-btn {
+    background: url('/img/twitter.png') no-repeat 50%;
+    background-size: contain;
+    display: block;
     font-weight: 300;
-    padding-top: 40px;
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    height: 28px;
+    margin: 40px auto 0;
+    min-width: 0;
+    padding: 0;
+    text-indent: -9999px;
+    width: 28px;
   }
 }
 
@@ -35,4 +37,15 @@
   font-weight: 300;
   padding: 0;
   text-shadow: 0 0 8px #fff;
+}
+
+
+@media (min-width: 768px) {
+  .splash {
+
+    .twitter-btn {
+      height: 50px;
+      width: 50px;
+    }
+  }
 }

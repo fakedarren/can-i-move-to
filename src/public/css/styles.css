@@ -42,9 +42,30 @@ p {
   left: -9999px;
   position: absolute; }
 
+footer {
+  background: #f8f6f6;
+  margin: 40px -20px 0;
+  padding: 18px 20px; }
+  footer p {
+    color: #565656;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    margin: 0;
+    text-align: left; }
+    footer p a {
+      color: inherit; }
+
 .cities {
   display: none;
-  padding: 20px 10px; }
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 100; }
+  .cities .wrapper {
+    background: #fff;
+    padding: 20px 10px; }
   .cities .list {
     list-style: none;
     margin: 0;
@@ -68,7 +89,7 @@ p {
       right: -10px; }
   .cities .pill {
     background: transparent;
-    border: 2px solid #42ffdf;
+    border: 2px solid #3A53FF;
     border-radius: 30px;
     display: inline-block;
     color: #000;
@@ -80,17 +101,32 @@ p {
     margin: 0 10px 10px 0;
     padding: 0 30px; }
     .cities .pill.selected {
-      background: #42ffdf;
+      background: #3A53FF;
+      color: #fff;
+      font-weight: 400;
       margin: 0 0 20px; }
 
 .information {
   display: none;
-  padding: 150px 20px 80px; }
+  padding: 150px 20px 0; }
   .information .copy {
     margin: 0 auto;
     max-width: 360px;
     position: relative;
     z-index: 2; }
+  .information .i-want-to-join,
+  .information .i-want-to-tweet {
+    height: 44px;
+    line-height: 42px;
+    padding: 0 30px;
+    text-decoration: none;
+    width: 100%; }
+  .information .i-want-to-tweet {
+    background: #fff url("/img/twitter.png") no-repeat 6px 50%;
+    background-size: 32px;
+    border: 1px solid #1DA1F2;
+    color: #0070B5;
+    margin-top: 15px; }
 
 .polaroids {
   bottom: 0;
@@ -106,6 +142,9 @@ p {
   z-index: 1; }
   .polaroids .polaroid {
     background-color: #ccc;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 4px solid #fff;
     box-shadow: 3px 3px 11px 3px rgba(0, 0, 0, 0.2);
     display: block;
@@ -114,39 +153,75 @@ p {
     text-indent: -9999px;
     width: 150px; }
     .polaroids .polaroid:nth-child(1) {
+      background-image: url("/img/cities/barcelona-1.jpg");
       left: -57px;
       -webkit-transform: rotate(-19deg);
               transform: rotate(-19deg);
       top: -14px; }
     .polaroids .polaroid:nth-child(2) {
+      background-image: url("/img/cities/barcelona-2.jpg");
       height: 160px;
-      left: 33px;
+      left: calc(50% - 83px);
       -webkit-transform: rotate(-12deg);
               transform: rotate(-12deg);
       top: -61px;
       width: 160px; }
     .polaroids .polaroid:nth-child(3) {
+      background-image: url("/img/cities/barcelona-3.jpg");
       right: 3px;
       -webkit-transform: rotate(12deg);
               transform: rotate(12deg);
       top: -41px; }
     .polaroids .polaroid:nth-child(4) {
+      background-image: url("/img/cities/barcelona-4.jpg");
       bottom: 37px;
       left: -50px;
       -webkit-transform: rotate(-32deg);
               transform: rotate(-32deg); }
     .polaroids .polaroid:nth-child(5) {
+      background-image: url("/img/cities/barcelona-5.jpg");
       bottom: 17px;
       right: -33px;
       -webkit-transform: rotate(-8deg);
               transform: rotate(-8deg); }
     .polaroids .polaroid:nth-child(6) {
+      background-image: url("/img/cities/barcelona-6.jpg");
       bottom: -40px;
       height: 160px;
       left: 103px;
       -webkit-transform: rotate(-2deg);
               transform: rotate(-2deg);
       width: 160px; }
+    .polaroids .polaroid:nth-child(7), .polaroids .polaroid:nth-child(8), .polaroids .polaroid:nth-child(9), .polaroids .polaroid:nth-child(10) {
+      display: none; }
+
+@media (min-width: 768px) {
+  .polaroids .polaroid,
+  .polaroids .polaroid:nth-child(1),
+  .polaroids .polaroid:nth-child(2),
+  .polaroids .polaroid:nth-child(3),
+  .polaroids .polaroid:nth-child(4),
+  .polaroids .polaroid:nth-child(5),
+  .polaroids .polaroid:nth-child(6) {
+    height: 250px;
+    width: 250px; }
+  .polaroids .polaroid:nth-child(7),
+  .polaroids .polaroid:nth-child(8) {
+    display: block; }
+  .polaroids .polaroid:nth-child(2) {
+    top: -150px; }
+  .polaroids .polaroid:nth-child(7) {
+    background-image: url("/img/cities/barcelona-7.jpg");
+    top: calc(50% - 125px);
+    left: -33px;
+    -webkit-transform: rotate(19deg);
+            transform: rotate(19deg); }
+  .polaroids .polaroid:nth-child(8) {
+    background-image: url("/img/cities/barcelona-8.jpg");
+    top: calc(50% - 103px);
+    right: -43px;
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg); } }
 
 .signup-form {
   display: none;
@@ -205,13 +280,17 @@ p {
     margin-top: -80px;
     padding: 0 30px;
     z-index: 100; }
-  .splash .link {
-    color: #000;
+  .splash .twitter-btn {
+    background: url("/img/twitter.png") no-repeat 50%;
+    background-size: contain;
+    display: block;
     font-weight: 300;
-    padding-top: 40px; }
-    .splash .link a {
-      color: inherit;
-      text-decoration: none; }
+    height: 28px;
+    margin: 40px auto 0;
+    min-width: 0;
+    padding: 0;
+    text-indent: -9999px;
+    width: 28px; }
 
 .choose-city {
   background: transparent;
@@ -222,6 +301,11 @@ p {
   font-weight: 300;
   padding: 0;
   text-shadow: 0 0 8px #fff; }
+
+@media (min-width: 768px) {
+  .splash .twitter-btn {
+    height: 50px;
+    width: 50px; } }
 
 .thanks {
   background-image: linear-gradient(to bottom left, #fff, #42ffdf);
