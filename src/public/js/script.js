@@ -35,6 +35,13 @@ $(function(){
     $('.cities').css('display', 'none');
     $('body').scrollTop();
   });
+
+  $('[data-behaviour="close-cities"]').on('click touchstart', function(evt){
+    evt.preventDefault();
+
+    $('.cities').css('display', 'none');
+    $('body').scrollTop();
+  });
 });
 
 

@@ -118,3 +118,28 @@
     }
   }
 }
+
+
+@media (min-width: 1200px) {
+  .polaroids {
+
+    .polaroid:nth-child(9),
+    .polaroid:nth-child(10) {
+      display: block;
+    }
+
+    .polaroid:nth-child(9) {
+      background-image: url('/img/cities/barcelona-9.jpg');
+      top: calc(50% + 125px);
+      left: -33px;
+      transform: rotate(19deg);
+    }
+
+    .polaroid:nth-child(8) {
+      background-image: url('/img/cities/barcelona-10.jpg');
+      top: calc(50% + 103px);
+      right: -43px;
+      transform: rotate(-5deg);
+    }
+  }
+}

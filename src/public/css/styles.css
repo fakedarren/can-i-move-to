@@ -66,6 +66,8 @@ footer {
   .cities .wrapper {
     background: #fff;
     padding: 20px 10px; }
+  .cities .footnote {
+    padding-bottom: 20px; }
   .cities .list {
     list-style: none;
     margin: 0;
@@ -223,6 +225,23 @@ footer {
     -webkit-transform: rotate(-5deg);
             transform: rotate(-5deg); } }
 
+@media (min-width: 1200px) {
+  .polaroids .polaroid:nth-child(9),
+  .polaroids .polaroid:nth-child(10) {
+    display: block; }
+  .polaroids .polaroid:nth-child(9) {
+    background-image: url("/img/cities/barcelona-9.jpg");
+    top: calc(50% + 125px);
+    left: -33px;
+    -webkit-transform: rotate(19deg);
+            transform: rotate(19deg); }
+  .polaroids .polaroid:nth-child(8) {
+    background-image: url("/img/cities/barcelona-10.jpg");
+    top: calc(50% + 103px);
+    right: -43px;
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg); } }
+
 .signup-form {
   display: none;
   padding: 150px 20px 40px; }
@@ -295,12 +314,15 @@ footer {
 .choose-city {
   background: transparent;
   border: 0;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid currentColor;
+  cursor: pointer;
   font-family: inherit;
   font-size: inherit;
   font-weight: 300;
   padding: 0;
   text-shadow: 0 0 8px #fff; }
+  .choose-city:focus, .choose-city:hover {
+    color: #3A53FF; }
 
 @media (min-width: 768px) {
   .splash .twitter-btn {
