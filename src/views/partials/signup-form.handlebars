@@ -26,27 +26,20 @@
     <p>Join us at Best for Britain. We're campaigning and fighting to keep the UK open to EU membership.</p>
     <p>Help us to stop Brexit and stop Brexit from taking away your freedom.</p>
     <div class="form-field">
-      <label class="sr-only" for="chosen-name">First name</label>
+      <label class="sr-only" for="name">Name</label>
       <input
-        id="chosen-name"
-        name="chosen-name"
-        placeholder="First name"
+        autocomplete="name"
+        id="name"
+        name="name"
+        placeholder="Name"
         required
-        type="text"
-      />
-    </div>
-    <div class="form-field">
-      <label class="sr-only" for="last-name">Last name</label>
-      <input
-        id="last-name"
-        name="last-name"
-        placeholder="Last name"
         type="text"
       />
     </div>
     <div class="form-field">
       <label class="sr-only" for="email">Email</label>
       <input
+        autocomplete="email"
         id="email"
         name="email"
         placeholder="Email"
@@ -56,6 +49,7 @@
     </div>
     <div class="form-field checkbox">
       <input
+        checked
         id="i-want-updates"
         name="i-want-updates"
         type="checkbox"

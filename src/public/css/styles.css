@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -286,7 +287,11 @@ footer {
         top: 2px;
         width: 20px; }
     .signup-form .checkbox :checked + label:before {
-      background: #333; }
+      color: green;
+      content: '✔︎';
+      line-height: 18px;
+      text-align: center;
+      width: 20px; }
 
 .splash {
   align-items: center;
@@ -308,8 +313,16 @@ footer {
     margin: 40px auto 0;
     min-width: 0;
     padding: 0;
+    position: relative;
     text-indent: -9999px;
     width: 28px; }
+    .splash .twitter-btn a {
+      bottom: 0;
+      display: block;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0; }
 
 .choose-city {
   background: transparent;

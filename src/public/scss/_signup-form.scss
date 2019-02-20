@@ -56,7 +56,11 @@
     }
 
     :checked + label:before {
-      background: #333;
+      color: green;
+      content: '✔︎';
+      line-height: 18px;
+      text-align: center;
+      width: 20px;
     }
   }
 }

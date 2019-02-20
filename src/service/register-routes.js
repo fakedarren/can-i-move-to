@@ -1,16 +1,12 @@
-const cities = require('../data/cities');
-const stories = require('../data/stories');
+const home = require('../routes/home.route');
+const join = require('../routes/join.route');
 
 
 module.exports = {
 
   register: (app) => {
-    app.get('/', (req, res, next) => {
-      res.render('pages/home', {
-        cities,
-        stories,
-      });
-    });
+    app.get('/', home);
+    app.post('/join', join);
   },
 
 };

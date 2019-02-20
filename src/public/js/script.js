@@ -64,6 +64,12 @@ $(function(){
 
     $('.signup-form').css('display', 'none');
     $('.thanks').css('display', 'block');
-    $('body').scrollTop();
+
+    window.scrollTo(0, 0);
+
+    $.post('/join', {
+      email: $('[name="email"]').val(),
+      name: $('[name="name"]').val(),
+    });;
   });
 });
