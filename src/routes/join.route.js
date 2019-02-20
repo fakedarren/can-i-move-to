@@ -16,7 +16,7 @@ module.exports = async (req, res, next) => {
     lastName = '';
   }
 
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
   const page = await browser.newPage();
 
   await page.goto('https://www.bestforbritain.org/join', { waitUntil: 'load' });
