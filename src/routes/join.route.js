@@ -16,20 +16,27 @@ module.exports = async (req, res, next) => {
     lastName = '';
   }
 
-  const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
-  const page = await browser.newPage();
+  try {
+    const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
+    const page = await browser.newPage();
 
-  await page.goto('https://www.bestforbritain.org/join', { waitUntil: 'load' });
+    await page.goto('https://www.bestforbritain.org/join', { waitUntil: 'load' });
 
-  await page.type('[name="signup[first_name]"]', firstName);
-  await page.type('[name="signup[last_name]"', lastName);
-  await page.type('[name="signup[email]"]', email);
+    await page.type('[name="signup[first_name]"]', firstName);
+    await page.type('[name="signup[last_name]"', lastName);
+    await page.type('[name="signup[email]"]', email);
 
-  await page.click('[name="signup[email_opt_in]"]');
+    await page.click('[name="signup[email_opt_in]"]');
 
-  await page.$eval('.signup_form', form => form.submit());
+    await page.$eval('.signup_form', form => form.submit());
 
-  res.json({
-    success: true,
-  });
+    res.json({
+      success: true,
+    });
+  } catch (e) {
+    res.json({
+      error: e.message,
+      success: false,
+    });
+  }
 };
