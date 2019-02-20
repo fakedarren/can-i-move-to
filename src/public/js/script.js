@@ -13,7 +13,8 @@ $(function(){
   
     $('.splash').css('display', 'none');
     $('.information').css('display', 'block');
-    $('body').scrollTop();
+
+    window.scrollTo(0, 0);
   });
 });
 
@@ -33,14 +34,16 @@ $(function(){
     $('.cities .list-item[data-city="' + selected + '"]').css('display', 'none');
 
     $('.cities').css('display', 'none');
-    $('body').scrollTop();
+
+    window.scrollTo(0, 0);
   });
 
   $('[data-behaviour="close-cities"]').on('click touchstart', function(evt){
     evt.preventDefault();
 
     $('.cities').css('display', 'none');
-    $('body').scrollTop();
+
+    window.scrollTo(0, 0);
   });
 });
 
@@ -52,7 +55,8 @@ $(function(){
 
     $('.information').css('display', 'none');
     $('.signup-form').css('display', 'block');
-    $('body').scrollTop();
+
+    window.scrollTo(0, 0);
   });
 });
 

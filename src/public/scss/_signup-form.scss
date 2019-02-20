@@ -1,11 +1,12 @@
 .signup-form {
   display: none;
-  padding: 150px 20px 40px;
+  padding: 150px 20px 0;
 
   fieldset {
     border: 0;
     margin: 0 auto;
     max-width: 360px;
+    min-height: calc(100vh - 218px);
     position: relative;
     z-index: 2;
   }
