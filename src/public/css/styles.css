@@ -173,13 +173,13 @@ footer {
     text-indent: -9999px;
     width: 150px; }
     .polaroids .polaroid:nth-child(1) {
-      background-image: url("/img/cities/barcelona-1.jpg");
+      background-image: url("/img/cities/barcelona/1.jpg");
       left: -57px;
       -webkit-transform: rotate(-19deg);
               transform: rotate(-19deg);
       top: -14px; }
     .polaroids .polaroid:nth-child(2) {
-      background-image: url("/img/cities/barcelona-2.jpg");
+      background-image: url("/img/cities/barcelona/2.jpg");
       height: 160px;
       left: calc(50% - 83px);
       -webkit-transform: rotate(-12deg);
@@ -187,25 +187,25 @@ footer {
       top: -61px;
       width: 160px; }
     .polaroids .polaroid:nth-child(3) {
-      background-image: url("/img/cities/barcelona-3.jpg");
+      background-image: url("/img/cities/barcelona/3.jpg");
       right: 3px;
       -webkit-transform: rotate(12deg);
               transform: rotate(12deg);
       top: -41px; }
     .polaroids .polaroid:nth-child(4) {
-      background-image: url("/img/cities/barcelona-4.jpg");
+      background-image: url("/img/cities/barcelona/4.jpg");
       bottom: 37px;
       left: -50px;
       -webkit-transform: rotate(-32deg);
               transform: rotate(-32deg); }
     .polaroids .polaroid:nth-child(5) {
-      background-image: url("/img/cities/barcelona-5.jpg");
+      background-image: url("/img/cities/barcelona/5.jpg");
       bottom: 17px;
       right: -33px;
       -webkit-transform: rotate(-8deg);
               transform: rotate(-8deg); }
     .polaroids .polaroid:nth-child(6) {
-      background-image: url("/img/cities/barcelona-6.jpg");
+      background-image: url("/img/cities/barcelona/6.jpg");
       bottom: -40px;
       height: 160px;
       left: 103px;
@@ -231,13 +231,13 @@ footer {
   .polaroids .polaroid:nth-child(2) {
     top: -150px; }
   .polaroids .polaroid:nth-child(7) {
-    background-image: url("/img/cities/barcelona-7.jpg");
+    background-image: url("/img/cities/barcelona/7.jpg");
     top: calc(50% - 125px);
     left: -33px;
     -webkit-transform: rotate(19deg);
             transform: rotate(19deg); }
   .polaroids .polaroid:nth-child(8) {
-    background-image: url("/img/cities/barcelona-8.jpg");
+    background-image: url("/img/cities/barcelona/8.jpg");
     top: calc(50% - 103px);
     right: -43px;
     -webkit-transform: rotate(-5deg);
@@ -248,13 +248,13 @@ footer {
   .polaroids .polaroid:nth-child(10) {
     display: block; }
   .polaroids .polaroid:nth-child(9) {
-    background-image: url("/img/cities/barcelona-9.jpg");
+    background-image: url("/img/cities/barcelona/9.jpg");
     top: -110px;
     left: 253px;
     -webkit-transform: rotate(19deg);
             transform: rotate(19deg); }
   .polaroids .polaroid:nth-child(10) {
-    background-image: url("/img/cities/barcelona-10.jpg");
+    background-image: url("/img/cities/barcelona/10.jpg");
     bottom: -10px;
     right: 243px;
     -webkit-transform: rotate(8deg);
