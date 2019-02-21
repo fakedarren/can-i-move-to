@@ -9,20 +9,37 @@
     z-index: 2;
   }
 
-  .i-want-to-join,
-  .i-want-to-tweet {
+  .i-want-to-join {
     height: 44px;
     line-height: 42px;
     padding: 0 30px;
     text-decoration: none;
     width: 100%;
   }
+}
 
-  .i-want-to-tweet {
-    background: #fff url('/img/twitter.png') no-repeat 6px 50%;
-    background-size: 32px;
-    border: 1px solid #1DA1F2;
-    color: #0070B5;
-    margin-top: 15px;
-  }
+.i-want-to-share {
+  background: #fff url('/img/facebook.png') no-repeat 6px 50%;
+  background-size: 32px;
+  border: 1px solid #4267B2;
+  color: #4267B2;
+  height: 44px;
+  line-height: 42px;
+  margin-top: 15px;
+  padding: 0 30px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.i-want-to-tweet {
+  background: #fff url('/img/twitter.png') no-repeat 6px 50%;
+  background-size: 32px;
+  border: 1px solid #1DA1F2;
+  color: #0070B5;
+  height: 44px;
+  line-height: 42px;
+  margin-top: 15px;
+  padding: 0 30px;
+  text-decoration: none;
+  width: 100%;
 }

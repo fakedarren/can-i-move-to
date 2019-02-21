@@ -14,13 +14,31 @@
     z-index: 100;
   }
 
+  .buttons {
+    margin: 40px auto 0;
+  }
+
+  .fb-btn {
+    background: url('/img/facebook.png') no-repeat 50%;
+    background-size: contain;
+    display: inline-block;
+    font-weight: 300;
+    height: 28px;
+    margin-left: 15px;
+    min-width: 0;
+    padding: 0;
+    position: relative;
+    text-indent: -9999px;
+    width: 28px;
+  }
+
   .twitter-btn {
     background: url('/img/twitter.png') no-repeat 50%;
     background-size: contain;
-    display: block;
+    display: inline-block;
     font-weight: 300;
     height: 28px;
-    margin: 40px auto 0;
+    margin-right: 15px;
     min-width: 0;
     padding: 0;
     position: relative;
@@ -59,8 +77,10 @@
 @media (min-width: 768px) {
   .splash {
 
+    .fb-btn,
     .twitter-btn {
       height: 50px;
+      vertical-align: middle;
       width: 50px;
     }
   }

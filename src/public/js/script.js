@@ -67,7 +67,7 @@ $(function(){
     evt.preventDefault();
 
     $('.signup-form').css('display', 'none');
-    $('.thanks').css('display', 'block');
+    $('.thanks').css('display', 'flex');
 
     window.scrollTo(0, 0);
 

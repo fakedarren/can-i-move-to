@@ -130,16 +130,16 @@
 
     .polaroid:nth-child(9) {
       background-image: url('/img/cities/barcelona-9.jpg');
-      top: calc(50% + 125px);
-      left: -33px;
+      top: -110px;
+      left: 253px;
       transform: rotate(19deg);
     }
 
-    .polaroid:nth-child(8) {
+    .polaroid:nth-child(10) {
       background-image: url('/img/cities/barcelona-10.jpg');
-      top: calc(50% + 103px);
-      right: -43px;
-      transform: rotate(-5deg);
+      bottom: -10px;
+      right: 243px;
+      transform: rotate(8deg);
     }
   }
 }

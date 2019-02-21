@@ -117,19 +117,36 @@ footer {
     max-width: 360px;
     position: relative;
     z-index: 2; }
-  .information .i-want-to-join,
-  .information .i-want-to-tweet {
+  .information .i-want-to-join {
     height: 44px;
     line-height: 42px;
     padding: 0 30px;
     text-decoration: none;
     width: 100%; }
-  .information .i-want-to-tweet {
-    background: #fff url("/img/twitter.png") no-repeat 6px 50%;
-    background-size: 32px;
-    border: 1px solid #1DA1F2;
-    color: #0070B5;
-    margin-top: 15px; }
+
+.i-want-to-share {
+  background: #fff url("/img/facebook.png") no-repeat 6px 50%;
+  background-size: 32px;
+  border: 1px solid #4267B2;
+  color: #4267B2;
+  height: 44px;
+  line-height: 42px;
+  margin-top: 15px;
+  padding: 0 30px;
+  text-decoration: none;
+  width: 100%; }
+
+.i-want-to-tweet {
+  background: #fff url("/img/twitter.png") no-repeat 6px 50%;
+  background-size: 32px;
+  border: 1px solid #1DA1F2;
+  color: #0070B5;
+  height: 44px;
+  line-height: 42px;
+  margin-top: 15px;
+  padding: 0 30px;
+  text-decoration: none;
+  width: 100%; }
 
 .polaroids {
   bottom: 0;
@@ -232,16 +249,16 @@ footer {
     display: block; }
   .polaroids .polaroid:nth-child(9) {
     background-image: url("/img/cities/barcelona-9.jpg");
-    top: calc(50% + 125px);
-    left: -33px;
+    top: -110px;
+    left: 253px;
     -webkit-transform: rotate(19deg);
             transform: rotate(19deg); }
-  .polaroids .polaroid:nth-child(8) {
+  .polaroids .polaroid:nth-child(10) {
     background-image: url("/img/cities/barcelona-10.jpg");
-    top: calc(50% + 103px);
-    right: -43px;
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg); } }
+    bottom: -10px;
+    right: 243px;
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg); } }
 
 .signup-form {
   display: none;
@@ -305,13 +322,27 @@ footer {
     margin-top: -80px;
     padding: 0 30px;
     z-index: 100; }
+  .splash .buttons {
+    margin: 40px auto 0; }
+  .splash .fb-btn {
+    background: url("/img/facebook.png") no-repeat 50%;
+    background-size: contain;
+    display: inline-block;
+    font-weight: 300;
+    height: 28px;
+    margin-left: 15px;
+    min-width: 0;
+    padding: 0;
+    position: relative;
+    text-indent: -9999px;
+    width: 28px; }
   .splash .twitter-btn {
     background: url("/img/twitter.png") no-repeat 50%;
     background-size: contain;
-    display: block;
+    display: inline-block;
     font-weight: 300;
     height: 28px;
-    margin: 40px auto 0;
+    margin-right: 15px;
     min-width: 0;
     padding: 0;
     position: relative;
@@ -339,42 +370,17 @@ footer {
     color: #3A53FF; }
 
 @media (min-width: 768px) {
+  .splash .fb-btn,
   .splash .twitter-btn {
     height: 50px;
+    vertical-align: middle;
     width: 50px; } }
 
 .thanks {
-  background-image: linear-gradient(to bottom left, #fff, #42ffdf);
+  align-items: center;
   display: none;
-  min-height: 100vh;
-  padding: 20px; }
-  .thanks h1 {
-    text-shadow: none; }
+  height: 100vh;
+  justify-content: center; }
   .thanks .copy {
     margin: 0 auto;
-    max-width: 560px; }
-  .thanks .stories {
-    list-style: none;
-    padding: 20px 0 0; }
-  .thanks .story {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px 0 rgba(18, 15, 15, 0.5);
-    margin: 0 0 10px;
-    padding: 20px;
-    text-align: left; }
-    .thanks .story .avatar {
-      background: #ccc;
-      border-radius: 50%;
-      float: left;
-      height: 56px;
-      margin-right: 10px;
-      width: 56px; }
-    .thanks .story .name {
-      font-size: 20px;
-      font-weight: 400;
-      margin: 0 0 10px; }
-    .thanks .story .description {
-      font-size: 16px;
-      font-weight: 300;
-      margin: 0 0 0 66px; }
+    max-width: 360px; }
