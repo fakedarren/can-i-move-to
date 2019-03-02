@@ -35,6 +35,10 @@ $(function(){
 
     $('.cities').css('display', 'none');
 
+    for (var i = 1; i <= 10; i++) {
+      $('.polaroid:nth-child(' + i + ')').css('background-image', 'url(\'/img/cities/' + selected.toLowerCase() + '/' + i + '.jpg\')');
+    }
+
     window.scrollTo(0, 0);
   });
 
