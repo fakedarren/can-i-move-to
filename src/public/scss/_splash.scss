@@ -18,32 +18,29 @@
     margin: 40px auto 0;
   }
 
-  .fb-btn {
-    background: url('/img/facebook.png') no-repeat 50%;
-    background-size: contain;
-    display: inline-block;
-    font-weight: 300;
-    height: 28px;
-    margin-left: 15px;
-    min-width: 0;
-    padding: 0;
+  .icon-btn {
     position: relative;
-    text-indent: -9999px;
-    width: 28px;
-  }
-
-  .twitter-btn {
-    background: url('/img/twitter.png') no-repeat 50%;
-    background-size: contain;
     display: inline-block;
+    text-indent: -9999px;
+    background-size: contain;
     font-weight: 300;
+    width: 28px;
     height: 28px;
     margin-right: 15px;
     min-width: 0;
     padding: 0;
-    position: relative;
-    text-indent: -9999px;
-    width: 28px;
+
+    &.fb-btn {
+      background: url('/img/facebook.png') no-repeat 50%;
+    }
+
+    &.twitter-btn {
+      background: url('/img/twitter.png') no-repeat 50%;
+    }
+
+    &:last-child {
+      margin-right: none;
+    }
 
     a {
       bottom: 0;
@@ -77,8 +74,7 @@
 @media (min-width: 768px) {
   .splash {
 
-    .fb-btn,
-    .twitter-btn {
+    .icon-btn {
       height: 50px;
       vertical-align: middle;
       width: 50px;

@@ -324,31 +324,24 @@ footer {
     z-index: 100; }
   .splash .buttons {
     margin: 40px auto 0; }
-  .splash .fb-btn {
-    background: url("/img/facebook.png") no-repeat 50%;
-    background-size: contain;
-    display: inline-block;
-    font-weight: 300;
-    height: 28px;
-    margin-left: 15px;
-    min-width: 0;
-    padding: 0;
+  .splash .icon-btn {
     position: relative;
-    text-indent: -9999px;
-    width: 28px; }
-  .splash .twitter-btn {
-    background: url("/img/twitter.png") no-repeat 50%;
-    background-size: contain;
     display: inline-block;
+    text-indent: -9999px;
+    background-size: contain;
     font-weight: 300;
+    width: 28px;
     height: 28px;
     margin-right: 15px;
     min-width: 0;
-    padding: 0;
-    position: relative;
-    text-indent: -9999px;
-    width: 28px; }
-    .splash .twitter-btn a {
+    padding: 0; }
+    .splash .icon-btn.fb-btn {
+      background: url("/img/facebook.png") no-repeat 50%; }
+    .splash .icon-btn.twitter-btn {
+      background: url("/img/twitter.png") no-repeat 50%; }
+    .splash .icon-btn:last-child {
+      margin-right: none; }
+    .splash .icon-btn a {
       bottom: 0;
       display: block;
       left: 0;
@@ -370,8 +363,7 @@ footer {
     color: #3A53FF; }
 
 @media (min-width: 768px) {
-  .splash .fb-btn,
-  .splash .twitter-btn {
+  .splash .icon-btn {
     height: 50px;
     vertical-align: middle;
     width: 50px; } }
