@@ -8,6 +8,22 @@
   <title>Can I move to...</title>
   <link href='//fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
   <link rel='stylesheet' type='text/css' href='/css/styles.css' />
+  <script type="application/javascript">
+    var dnt=(navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack);
+    var doNotTrack=(dnt=="1"||dnt=="yes");
+    if(!doNotTrack){
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};
+      ga.l=+new Date;
+      if(window.sessionStorage){
+        var GA_SESSION_STORAGE_KEY='ga:clientId';
+        ga('create','UA-131452165-2',{'storage':'none','clientId':sessionStorage.getItem(GA_SESSION_STORAGE_KEY)});
+        ga(function(tracker){sessionStorage.setItem(GA_SESSION_STORAGE_KEY,tracker.get('clientId'));});
+      }
+      ga('set','anonymizeIp',true);
+      ga('send','pageview');
+    }
+  </script>
+  <script async="" src="https://www.google-analytics.com/analytics.js"></script>
 </head>
 <body>
   {{{body}}}
