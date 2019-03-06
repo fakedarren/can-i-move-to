@@ -4,7 +4,6 @@
   "Athens",
   "Berlin",
   "Bratislava",
-  "Bruges",
   "Brussels",
   "Bucharest",
   "Budapest",
@@ -17,14 +16,10 @@
   "Luxembourg",
   "Madrid",
   "Milan",
-  "Naples",
-  "Nice",
   "Nicosia",
-  "Oslo",
   "Paris",
   "Porto",
   "Prague",
-  "Reykjavik",
   "Riga",
   "Rome",
   "Sofia",
@@ -35,5 +30,6 @@
   "Vienna",
   "Vilnius",
   "Warsaw",
-  "Zagreb"
+  "Zagreb",
+  "Zaragoza"
 ]
