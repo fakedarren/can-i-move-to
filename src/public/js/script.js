@@ -1,5 +1,16 @@
 /* eslint-disable */
 
+window.onpopstate = function(event) {
+  const state = event.state || { selected: 'Barcelona' };
+  $('[data-ui="city"]').text(state.selected);
+
+  $('.splash').css('display', 'flex');
+  $('.cities').css('display', 'none');
+  $('.information').css('display', 'none');
+  $('.signup-form').css('display', 'none');
+  $('.thanks').css('display', 'none');
+};
+
 /* SPLASH */
 $(function(){
   $('[data-behaviour="go-to-choose-city"]').on('click touchstart', function(evt){
@@ -27,6 +38,7 @@ $(function(){
     evt.preventDefault();
 
     const selected = $(this).text();
+    history.pushState({selected}, selected, selected.toLowerCase());
 
     $('[data-ui="city"]').text(selected);
 
