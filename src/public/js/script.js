@@ -1,14 +1,20 @@
 /* eslint-disable */
 
 window.onpopstate = function(event) {
-  const state = event.state || { selected: 'Barcelona' };
-  $('[data-ui="city"]').text(state.selected);
+  if (event.state) {
+    const selected = event.state.selected;
+    $('[data-ui="city"]').text(selected);
 
-  $('.splash').css('display', 'flex');
-  $('.cities').css('display', 'none');
-  $('.information').css('display', 'none');
-  $('.signup-form').css('display', 'none');
-  $('.thanks').css('display', 'none');
+    for (var i = 1; i <= 10; i++) {
+      $('.polaroid:nth-child(' + i + ')').css('background-image', 'url(\'/img/cities/' + selected.toLowerCase() + '/' + i + '.jpg\')');
+    }
+
+    $('.splash').css('display', 'flex');
+    $('.cities').css('display', 'none');
+    $('.information').css('display', 'none');
+    $('.signup-form').css('display', 'none');
+    $('.thanks').css('display', 'none');
+  }
 };
 
 /* SPLASH */

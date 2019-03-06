@@ -28,6 +28,44 @@
   <link href="/img/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
   <link href="/img/favicons/favicon-32x32.png" rel="icon" type="image/png">
   <meta name="msapplication-config" content="/browserconfig.xml" />
+  <style type="text/css">
+    .polaroids .polaroid:nth-child(1) {
+      background-image: url("/img/cities/{{city}}/1.jpg");
+    }
+    .polaroids .polaroid:nth-child(2) {
+      background-image: url("/img/cities/{{city}}/2.jpg");
+    }
+    .polaroids .polaroid:nth-child(3) {
+      background-image: url("/img/cities/{{city}}/3.jpg");
+    }
+    .polaroids .polaroid:nth-child(4) {
+      background-image: url("/img/cities/{{city}}/4.jpg");
+    }
+    .polaroids .polaroid:nth-child(5) {
+      background-image: url("/img/cities/{{city}}/5.jpg");
+    }
+    .polaroids .polaroid:nth-child(6) {
+      background-image: url("/img/cities/{{city}}/6.jpg");
+    }
+    .polaroids .polaroid:nth-child(7) {
+      background-image: url("/img/cities/{{city}}/7.jpg");
+    }
+    .polaroids .polaroid:nth-child(8) {
+      background-image: url("/img/cities/{{city}}/8.jpg");
+    }
+    .polaroids .polaroid:nth-child(9) {
+      background-image: url("/img/cities/{{city}}/9.jpg");
+    }
+    .polaroids .polaroid:nth-child(10) {
+      background-image: url("/img/cities/{{city}}/10.jpg");
+    }
+  </style>
+  <script type="application/javascript">
+    (function () {
+      const selected = '{{city}}';
+      history.replaceState({selected}, selected);
+    })();
+  </script>
   <script type="application/javascript">
     var dnt=(navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack);
     var doNotTrack=(dnt=="1"||dnt=="yes");
