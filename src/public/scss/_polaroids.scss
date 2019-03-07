@@ -25,14 +25,12 @@
     width: 150px;
 
     &:nth-child(1) {
-      background-image: url('/img/cities/barcelona/1.jpg');
       left: -57px;
       transform: rotate(-19deg);
       top: -14px;
     }
 
     &:nth-child(2) {
-      background-image: url('/img/cities/barcelona/2.jpg');
       height: 160px;
       left: calc(50% - 83px);
       transform: rotate(-12deg);
@@ -41,28 +39,24 @@
     }
 
     &:nth-child(3) {
-      background-image: url('/img/cities/barcelona/3.jpg');
       right: 3px;
       transform: rotate(12deg);
       top: -41px;
     }
 
     &:nth-child(4) {
-      background-image: url('/img/cities/barcelona/4.jpg');
       bottom: 37px;
       left: -50px;
       transform: rotate(-32deg);
     }
 
     &:nth-child(5) {
-      background-image: url('/img/cities/barcelona/5.jpg');
       bottom: 17px;
       right: -33px;
       transform: rotate(-8deg);
     }
 
     &:nth-child(6) {
-      background-image: url('/img/cities/barcelona/6.jpg');
       bottom: -40px;
       height: 160px;
       left: 103px;
@@ -104,14 +98,12 @@
     }
 
     .polaroid:nth-child(7) {
-      background-image: url('/img/cities/barcelona/7.jpg');
       top: calc(50% - 125px);
       left: -33px;
       transform: rotate(19deg);
     }
 
     .polaroid:nth-child(8) {
-      background-image: url('/img/cities/barcelona/8.jpg');
       top: calc(50% - 103px);
       right: -43px;
       transform: rotate(-5deg);
@@ -129,14 +121,12 @@
     }
 
     .polaroid:nth-child(9) {
-      background-image: url('/img/cities/barcelona/9.jpg');
       top: -110px;
       left: 253px;
       transform: rotate(19deg);
     }
 
     .polaroid:nth-child(10) {
-      background-image: url('/img/cities/barcelona/10.jpg');
       bottom: -10px;
       right: 243px;
       transform: rotate(8deg);
