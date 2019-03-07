@@ -66,7 +66,7 @@ footer {
       color: #0042c5;
       transition: all 0.2s ease-in; }
       footer p a:hover, footer p a:focus {
-        color: #003192; }
+        color: #3b53ff; }
 
 .cities {
   display: none;
@@ -103,7 +103,7 @@ footer {
       right: -10px; }
   .cities .pill {
     background: transparent;
-    border: 2px solid #3A53FF;
+    border: 2px solid #3b53ff;
     border-radius: 30px;
     display: inline-block;
     color: #000;
@@ -113,10 +113,13 @@ footer {
     height: 45px;
     line-height: 41px;
     margin: 0 10px 10px 0;
-    padding: 0 30px; }
+    padding: 0 30px;
+    cursor: pointer;
+    transition: all 0.2s ease-in; }
+    .cities .pill.selected, .cities .pill:hover, .cities .pill:focus {
+      background-color: #3b53ff;
+      color: #fff; }
     .cities .pill.selected {
-      background: #3A53FF;
-      color: #fff;
       font-weight: 400;
       margin: 0 0 20px; }
 
@@ -352,7 +355,7 @@ footer {
       cursor: pointer;
       transition: all 0.2s ease-in; }
       .splash h1 .choose-city:hover, .splash h1 .choose-city:focus {
-        color: #003192; }
+        color: #3b53ff; }
   .splash .copy {
     margin-top: -80px;
     padding: 0 30px;
