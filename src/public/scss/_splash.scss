@@ -19,6 +19,10 @@
     margin: 40px auto 0;
   }
 
+  .take-action {
+    font-size: 20px;
+  }
+
   .icon-btn {
     position: relative;
     display: inline-block;
@@ -54,24 +58,6 @@
     }
   }
 }
-
-.choose-city {
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid currentColor;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: 300;
-  padding: 0;
-  text-shadow: 0 0 8px #fff;
-
-  &:focus,
-  &:hover {
-    color: #3A53FF;
-  }
-}
-
 
 @media (min-width: 768px) {
   .splash {

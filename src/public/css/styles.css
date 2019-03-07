@@ -43,7 +43,7 @@ a {
   color: #fff;
   display: inline-block;
   font-family: Lato, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1;
   min-width: 180px;
   max-width: 260px;
@@ -55,7 +55,14 @@ a {
 
 /** Choose city link, here as global */
 .choose-city {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: 300;
+  padding: 0;
+  text-shadow: 0 0 8px #fff;
   color: #0042c5;
   cursor: pointer;
   transition: all 0.2s ease-in; }
@@ -163,7 +170,7 @@ footer {
 
 .i-want-to-share {
   background: #4267b2 url("/img/facebook.png") no-repeat 6px 50%;
-  background-size: 32px;
+  background-size: 25px;
   color: #fff;
   height: 44px;
   line-height: 42px;
@@ -176,7 +183,7 @@ footer {
 
 .i-want-to-tweet {
   background: #1da1f2 url("/img/twitter.png") no-repeat 6px 50%;
-  background-size: 32px;
+  background-size: 25px;
   color: #fff;
   height: 44px;
   line-height: 42px;
@@ -188,9 +195,8 @@ footer {
     background-color: #0c85d0; }
 
 .i-want-to-say {
-  background: #ef4f4d url("/img/finalsay.png") no-repeat 10px 50%;
-  background-size: 32px;
-  border: 1px solid #EF4F4D;
+  background: #ef4f4d url("/img/finalsay.png") no-repeat 8px 50%;
+  background-size: 25px;
   color: #fff;
   height: 44px;
   line-height: 42px;
@@ -368,6 +374,8 @@ footer {
     z-index: 100; }
   .splash .buttons {
     margin: 40px auto 0; }
+  .splash .take-action {
+    font-size: 20px; }
   .splash .icon-btn {
     position: relative;
     display: inline-block;
@@ -393,19 +401,6 @@ footer {
       position: absolute;
       right: 0;
       top: 0; }
-
-.choose-city {
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid currentColor;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: 300;
-  padding: 0;
-  text-shadow: 0 0 8px #fff; }
-  .choose-city:focus, .choose-city:hover {
-    color: #3A53FF; }
 
 @media (min-width: 768px) {
   .splash .icon-btn {

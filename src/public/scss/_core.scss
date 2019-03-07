@@ -4,7 +4,7 @@
 $font-family: Lato, sans-serif;
 $splash-heading: 38px;
 $large-heading: 32px;
-$button-font-size: 20px;
+$button-font-size: 18px;
 
 $link-colour: #0042c5;
 $link-colour-hover: #3b53ff;
@@ -93,7 +93,14 @@ a {
 
 /** Choose city link, here as global */
 .choose-city {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: 300;
+  padding: 0;
+  text-shadow: 0 0 8px #fff;
   color: $link-colour;
   cursor: pointer;
   transition: $default-transition;
