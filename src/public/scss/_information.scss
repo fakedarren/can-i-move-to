@@ -4,9 +4,25 @@
 
   .copy {
     margin: 0 auto;
-    max-width: 360px;
+    max-width: $content-max-width;
     position: relative;
     z-index: 2;
+  }
+
+  .header-text {
+    font-size: $large-heading;
+    font-weight: 700;
+
+    .very-large-text {
+      display: block;
+      font-size: $splash-heading;
+    }
+  }
+
+  .restricted-width {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .i-want-to-join {
@@ -19,35 +35,8 @@
 }
 
 .i-want-to-share {
-  background: #fff url('/img/facebook.png') no-repeat 6px 50%;
-  background-size: 32px;
-  border: 1px solid #4267B2;
-  color: #4267B2;
-  height: 44px;
-  line-height: 42px;
-  margin-top: 15px;
-  padding: 0 30px;
-  text-decoration: none;
-  width: 100%;
-}
-
-.i-want-to-tweet {
-  background: #fff url('/img/twitter.png') no-repeat 6px 50%;
-  background-size: 32px;
-  border: 1px solid #1DA1F2;
-  color: #0070B5;
-  height: 44px;
-  line-height: 42px;
-  margin-top: 15px;
-  padding: 0 30px;
-  text-decoration: none;
-  width: 100%;
-}
-
-.i-want-to-say {
-  background: #EF4F4D url('/img/finalsay.png') no-repeat 10px 50%;
-  background-size: 32px;
-  border: 1px solid #EF4F4D;
+  background: $facebook-brand-colour url('/img/facebook.png') no-repeat 6px 50%;
+  background-size: 25px;
   color: #fff;
   height: 44px;
   line-height: 42px;
@@ -55,4 +44,37 @@
   padding: 0 30px;
   text-decoration: none;
   width: 100%;
+  &:hover, &:focus {
+    background-color: $facebook-brand-colour-hover;
+  }
+}
+
+.i-want-to-tweet {
+  background: $twitter-brand-colour url('/img/twitter.png') no-repeat 6px 50%;
+  background-size: 25px;
+  color: #fff;
+  height: 44px;
+  line-height: 42px;
+  margin-top: 15px;
+  padding: 0 30px;
+  text-decoration: none;
+  width: 100%;
+  &:hover, &:focus {
+    background-color: $twitter-brand-colour-hover;
+  }
+}
+
+.i-want-to-say {
+  background: $cta-colour url('/img/finalsay.png') no-repeat 8px 50%;
+  background-size: 25px;
+  color: #fff;
+  height: 44px;
+  line-height: 42px;
+  margin-top: 15px;
+  padding: 0 30px;
+  text-decoration: none;
+  width: 100%;
+  &:hover, &:focus {
+    background-color: $cta-colour-hover;
+  }
 }

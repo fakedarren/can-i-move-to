@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/**
+ * Variables
+ */
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -13,7 +16,7 @@ body {
   text-align: center; }
 
 h1 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
   margin: 0;
   text-shadow: 0 0 8px #fff; }
@@ -27,17 +30,44 @@ p {
   font-weight: 300;
   line-height: 21px; }
 
+a {
+  color: #0042c5;
+  transition: all 0.2s ease-in; }
+  a:hovernot(.btn), a:focusnot(.btn) {
+    color: #3b53ff; }
+
 .btn {
-  background: #ff0164;
+  background-color: #ff0164;
   border: 0;
   border-radius: 56px;
   color: #fff;
   display: inline-block;
   font-family: Lato, sans-serif;
-  font-size: 20px;
-  line-height: 54px;
+  font-size: 18px;
+  line-height: 1;
   min-width: 180px;
-  padding: 10px 30px; }
+  max-width: 260px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: all 0.2s ease-in; }
+  .btn:hover, .btn:focus {
+    background-color: #cd0050; }
+
+/** Choose city link, here as global */
+.choose-city {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 300;
+  padding: 0;
+  text-shadow: 0 0 8px #fff;
+  color: #0042c5;
+  cursor: pointer;
+  transition: all 0.2s ease-in; }
+  .choose-city:hover, .choose-city:focus {
+    color: #3b53ff; }
 
 .sr-only {
   left: -9999px;
@@ -46,20 +76,21 @@ p {
 footer {
   background: #f8f6f6;
   margin: 40px -20px 0;
-  padding: 18px 20px; }
+  padding: 18px 20px;
+  text-align: center; }
   footer p {
     color: #565656;
     font-size: 12px;
     font-weight: 300;
     line-height: 16px;
-    margin: 0;
-    text-align: left; }
-    footer p a {
+    margin: 0; }
+    footer p a,
+    footer p a.btn {
       color: inherit; }
 
 .cities {
   display: none;
-  height: 100vh;
+  min-height: 100vh;
   position: absolute;
   top: 0;
   width: 100vw;
@@ -92,7 +123,7 @@ footer {
       right: -10px; }
   .cities .pill {
     background: transparent;
-    border: 2px solid #3A53FF;
+    border: 2px solid #3b53ff;
     border-radius: 30px;
     display: inline-block;
     color: #000;
@@ -102,10 +133,13 @@ footer {
     height: 45px;
     line-height: 41px;
     margin: 0 10px 10px 0;
-    padding: 0 30px; }
+    padding: 0 30px;
+    cursor: pointer;
+    transition: all 0.2s ease-in; }
+    .cities .pill.selected, .cities .pill:hover, .cities .pill:focus {
+      background-color: #3b53ff;
+      color: #fff; }
     .cities .pill.selected {
-      background: #3A53FF;
-      color: #fff;
       font-weight: 400;
       margin: 0 0 20px; }
 
@@ -114,9 +148,19 @@ footer {
   padding: 150px 20px 0; }
   .information .copy {
     margin: 0 auto;
-    max-width: 360px;
+    max-width: 490px;
     position: relative;
     z-index: 2; }
+  .information .header-text {
+    font-size: 32px;
+    font-weight: 700; }
+    .information .header-text .very-large-text {
+      display: block;
+      font-size: 38px; }
+  .information .restricted-width {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto; }
   .information .i-want-to-join {
     height: 44px;
     line-height: 42px;
@@ -125,33 +169,8 @@ footer {
     width: 100%; }
 
 .i-want-to-share {
-  background: #fff url("/img/facebook.png") no-repeat 6px 50%;
-  background-size: 32px;
-  border: 1px solid #4267B2;
-  color: #4267B2;
-  height: 44px;
-  line-height: 42px;
-  margin-top: 15px;
-  padding: 0 30px;
-  text-decoration: none;
-  width: 100%; }
-
-.i-want-to-tweet {
-  background: #fff url("/img/twitter.png") no-repeat 6px 50%;
-  background-size: 32px;
-  border: 1px solid #1DA1F2;
-  color: #0070B5;
-  height: 44px;
-  line-height: 42px;
-  margin-top: 15px;
-  padding: 0 30px;
-  text-decoration: none;
-  width: 100%; }
-
-.i-want-to-say {
-  background: #EF4F4D url("/img/finalsay.png") no-repeat 10px 50%;
-  background-size: 32px;
-  border: 1px solid #EF4F4D;
+  background: #4267b2 url("/img/facebook.png") no-repeat 6px 50%;
+  background-size: 25px;
   color: #fff;
   height: 44px;
   line-height: 42px;
@@ -159,6 +178,34 @@ footer {
   padding: 0 30px;
   text-decoration: none;
   width: 100%; }
+  .i-want-to-share:hover, .i-want-to-share:focus {
+    background-color: #34518d; }
+
+.i-want-to-tweet {
+  background: #1da1f2 url("/img/twitter.png") no-repeat 6px 50%;
+  background-size: 25px;
+  color: #fff;
+  height: 44px;
+  line-height: 42px;
+  margin-top: 15px;
+  padding: 0 30px;
+  text-decoration: none;
+  width: 100%; }
+  .i-want-to-tweet:hover, .i-want-to-tweet:focus {
+    background-color: #0c85d0; }
+
+.i-want-to-say {
+  background: #ef4f4d url("/img/finalsay.png") no-repeat 8px 50%;
+  background-size: 25px;
+  color: #fff;
+  height: 44px;
+  line-height: 42px;
+  margin-top: 15px;
+  padding: 0 30px;
+  text-decoration: none;
+  width: 100%; }
+  .i-want-to-say:hover, .i-want-to-say:focus {
+    background-color: #eb211e; }
 
 .polaroids {
   bottom: 0;
@@ -319,13 +366,16 @@ footer {
   height: 100vh;
   justify-content: center; }
   .splash h1 {
-    margin: 0 0 50px; }
+    margin: 0 0 50px;
+    font-size: 38px; }
   .splash .copy {
     margin-top: -80px;
     padding: 0 30px;
     z-index: 100; }
   .splash .buttons {
     margin: 40px auto 0; }
+  .splash .take-action {
+    font-size: 20px; }
   .splash .icon-btn {
     position: relative;
     display: inline-block;
@@ -351,19 +401,6 @@ footer {
       position: absolute;
       right: 0;
       top: 0; }
-
-.choose-city {
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid currentColor;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: 300;
-  padding: 0;
-  text-shadow: 0 0 8px #fff; }
-  .choose-city:focus, .choose-city:hover {
-    color: #3A53FF; }
 
 @media (min-width: 768px) {
   .splash .icon-btn {
