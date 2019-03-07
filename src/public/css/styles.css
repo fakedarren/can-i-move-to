@@ -33,7 +33,7 @@ p {
 a {
   color: #0042c5;
   transition: all 0.2s ease-in; }
-  a:hover, a:focus {
+  a:hovernot(.btn), a:focusnot(.btn) {
     color: #3b53ff; }
 
 .btn {
@@ -77,7 +77,8 @@ footer {
     font-weight: 300;
     line-height: 16px;
     margin: 0; }
-    footer p a {
+    footer p a,
+    footer p a.btn {
       color: inherit; }
 
 .cities {
