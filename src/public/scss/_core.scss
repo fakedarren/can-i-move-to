@@ -89,6 +89,17 @@ a {
   }
 }
 
+/** Choose city link, here as global */
+.choose-city {
+  font-weight: 300;
+  color: $link-colour;
+  cursor: pointer;
+  transition: $default-transition;
+  &:hover, &:focus {
+    color: $link-colour-hover;
+  }
+}
+
 .sr-only {
   left: -9999px;
   position: absolute;
@@ -107,7 +118,7 @@ footer {
     line-height: 16px;
     margin: 0;
 
-    a, a:hover, a:focus: {
+    a {
       color: inherit;
     }
   }

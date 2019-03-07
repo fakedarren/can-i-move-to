@@ -30,6 +30,12 @@ p {
   font-weight: 300;
   line-height: 21px; }
 
+a {
+  color: #0042c5;
+  transition: all 0.2s ease-in; }
+  a:hover, a:focus {
+    color: #3b53ff; }
+
 .btn {
   background-color: #ff0164;
   border: 0;
@@ -47,6 +53,15 @@ p {
   .btn:hover, .btn:focus {
     background-color: #cd0050; }
 
+/** Choose city link, here as global */
+.choose-city {
+  font-weight: 300;
+  color: #0042c5;
+  cursor: pointer;
+  transition: all 0.2s ease-in; }
+  .choose-city:hover, .choose-city:focus {
+    color: #3b53ff; }
+
 .sr-only {
   left: -9999px;
   position: absolute; }
@@ -63,10 +78,7 @@ footer {
     line-height: 16px;
     margin: 0; }
     footer p a {
-      color: #0042c5;
-      transition: all 0.2s ease-in; }
-      footer p a:hover, footer p a:focus {
-        color: #3b53ff; }
+      color: inherit; }
 
 .cities {
   display: none;
@@ -349,13 +361,6 @@ footer {
   .splash h1 {
     margin: 0 0 50px;
     font-size: 38px; }
-    .splash h1 .choose-city {
-      font-weight: 300;
-      color: #0042c5;
-      cursor: pointer;
-      transition: all 0.2s ease-in; }
-      .splash h1 .choose-city:hover, .splash h1 .choose-city:focus {
-        color: #3b53ff; }
   .splash .copy {
     margin-top: -80px;
     padding: 0 30px;
