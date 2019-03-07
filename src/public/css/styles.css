@@ -90,7 +90,7 @@ footer {
 
 .cities {
   display: none;
-  height: 100vh;
+  min-height: 100vh;
   position: absolute;
   top: 0;
   width: 100vw;
