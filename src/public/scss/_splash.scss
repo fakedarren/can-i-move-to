@@ -6,6 +6,17 @@
 
   h1 {
     margin: 0 0 50px;
+    font-size: $splash-heading;
+
+    .choose-city {
+      font-weight: 300;
+      color: $link-colour;
+      cursor: pointer;
+      transition: $default-transition;
+      &:hover, &:focus {
+        color: $link-colour-hover;
+      }
+    }
   }
 
   .copy {
