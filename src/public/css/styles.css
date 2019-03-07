@@ -31,7 +31,7 @@ p {
   line-height: 21px; }
 
 .btn {
-  background: #ff0164;
+  background-color: #ff0164;
   border: 0;
   border-radius: 56px;
   color: #fff;
@@ -40,11 +40,12 @@ p {
   font-size: 20px;
   line-height: 1;
   min-width: 180px;
+  max-width: 260px;
   padding: 10px 30px;
   cursor: pointer;
   transition: all 0.2s ease-in; }
   .btn:hover, .btn:focus {
-    background: #cd0050; }
+    background-color: #cd0050; }
 
 .sr-only {
   left: -9999px;
@@ -124,9 +125,19 @@ footer {
   padding: 150px 20px 0; }
   .information .copy {
     margin: 0 auto;
-    max-width: 360px;
+    max-width: 490px;
     position: relative;
     z-index: 2; }
+  .information .header-text {
+    font-size: 32px;
+    font-weight: 700; }
+    .information .header-text .very-large-text {
+      display: block;
+      font-size: 38px; }
+  .information .restricted-width {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto; }
   .information .i-want-to-join {
     height: 44px;
     line-height: 42px;
@@ -135,31 +146,33 @@ footer {
     width: 100%; }
 
 .i-want-to-share {
-  background: #fff url("/img/facebook.png") no-repeat 6px 50%;
+  background: #4267b2 url("/img/facebook.png") no-repeat 6px 50%;
   background-size: 32px;
-  border: 1px solid #4267B2;
-  color: #4267B2;
+  color: #fff;
   height: 44px;
   line-height: 42px;
   margin-top: 15px;
   padding: 0 30px;
   text-decoration: none;
   width: 100%; }
+  .i-want-to-share:hover, .i-want-to-share:focus {
+    background-color: #34518d; }
 
 .i-want-to-tweet {
-  background: #fff url("/img/twitter.png") no-repeat 6px 50%;
+  background: #1da1f2 url("/img/twitter.png") no-repeat 6px 50%;
   background-size: 32px;
-  border: 1px solid #1DA1F2;
-  color: #0070B5;
+  color: #fff;
   height: 44px;
   line-height: 42px;
   margin-top: 15px;
   padding: 0 30px;
   text-decoration: none;
   width: 100%; }
+  .i-want-to-tweet:hover, .i-want-to-tweet:focus {
+    background-color: #0c85d0; }
 
 .i-want-to-say {
-  background: #EF4F4D url("/img/finalsay.png") no-repeat 10px 50%;
+  background: #ef4f4d url("/img/finalsay.png") no-repeat 10px 50%;
   background-size: 32px;
   border: 1px solid #EF4F4D;
   color: #fff;
@@ -169,6 +182,8 @@ footer {
   padding: 0 30px;
   text-decoration: none;
   width: 100%; }
+  .i-want-to-say:hover, .i-want-to-say:focus {
+    background-color: #eb211e; }
 
 .polaroids {
   bottom: 0;
