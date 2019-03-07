@@ -54,14 +54,14 @@ p {
 footer {
   background: #f8f6f6;
   margin: 40px -20px 0;
-  padding: 18px 20px; }
+  padding: 18px 20px;
+  text-align: center; }
   footer p {
     color: #565656;
     font-size: 12px;
     font-weight: 300;
     line-height: 16px;
-    margin: 0;
-    text-align: left; }
+    margin: 0; }
     footer p a {
       color: #0042c5;
       transition: all 0.2s ease-in; }

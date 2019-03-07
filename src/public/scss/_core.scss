@@ -62,6 +62,14 @@ p {
   line-height: 21px;
 }
 
+a {
+  color: $link-colour;
+  transition: $default-transition;
+  &:hover, &:focus {
+    color: $link-colour-hover;
+  }
+}
+
 .btn {
   background-color: $button-colour;
   border: 0;
@@ -90,6 +98,7 @@ footer {
   background: #f8f6f6;
   margin: 40px -20px 0;
   padding: 18px 20px;
+  text-align: center;
 
   p {
     color: #565656;
@@ -97,14 +106,9 @@ footer {
     font-weight: 300;
     line-height: 16px;
     margin: 0;
-    text-align: left;
 
-    a {
-      color: $link-colour;
-      transition: $default-transition;
-      &:hover, &:focus {
-        color: $link-colour-hover;
-      }
+    a, a:hover, a:focus: {
+      color: inherit;
     }
   }
 }
