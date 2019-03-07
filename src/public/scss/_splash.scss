@@ -22,24 +22,25 @@
     position: relative;
     display: inline-block;
     text-indent: -9999px;
-    background-size: contain;
     font-weight: 300;
-    width: 28px;
-    height: 28px;
+    width: 38px;
+    height: 38px;
     margin-right: 15px;
     min-width: 0;
     padding: 0;
 
     &.fb-btn {
       background: url('/img/facebook.png') no-repeat 50%;
+      background-size: contain;
     }
 
     &.twitter-btn {
       background: url('/img/twitter.png') no-repeat 50%;
+      background-size: contain;
     }
 
     &:last-child {
-      margin-right: none;
+      margin-right: 0;
     }
 
     a {
