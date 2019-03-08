@@ -1,3 +1,31 @@
+/**
+ * Variables
+ */
+$font-family: Lato, sans-serif;
+$splash-heading: 38px;
+$large-heading: 32px;
+$button-font-size: 17px;
+
+$link-colour: #0042c5;
+$link-colour-hover: #3b53ff;
+$button-colour: #ff0164;
+$button-colour-hover: darken($button-colour, 10%);
+
+$pill-colour: $link-colour-hover;
+
+$facebook-brand-colour: #4267b2;
+$facebook-brand-colour-hover: darken($facebook-brand-colour, 10%);
+$twitter-brand-colour: #1da1f2;
+$twitter-brand-colour-hover: darken($twitter-brand-colour, 10%);
+
+$cta-colour: #ef4f4d;
+$cta-colour-hover: darken($cta-colour, 10%);
+
+$default-transition: all 0.2s ease-in;
+
+$content-max-width: 490px;
+$button-max-width: 260px;
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -10,12 +38,12 @@ html, body {
 
 body {
   background: #fff;
-  font-family: Lato, sans-serif;
+  font-family: $font-family;
   text-align: center;
 }
 
 h1 {
-  font-size: 36px;
+  font-size: $large-heading;
   font-weight: 700;
   margin: 0;
   text-shadow: 0 0 8px #fff;
@@ -34,17 +62,51 @@ p {
   line-height: 21px;
 }
 
+a {
+  color: $link-colour;
+  transition: $default-transition;
+  &:hover, &:focus {
+    &not(.btn) {
+      color: $link-colour-hover;
+    }
+  }
+}
+
 .btn {
-  background: #ff0164;
+  background-color: $button-colour;
   border: 0;
   border-radius: 56px;
   color: #fff;
   display: inline-block;
   font-family: Lato, sans-serif;
-  font-size: 20px;
-  line-height: 54px;
+  font-size: $button-font-size;
+  line-height: 1;
   min-width: 180px;
+  max-width: $button-max-width;
   padding: 10px 30px;
+  cursor: pointer;
+  transition: $default-transition;
+  &:hover, &:focus {
+    background-color: $button-colour-hover;
+  }
+}
+
+/** Choose city link, here as global */
+.choose-city {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 300;
+  padding: 0;
+  text-shadow: 0 0 8px #fff;
+  color: $link-colour;
+  cursor: pointer;
+  transition: $default-transition;
+  &:hover, &:focus {
+    color: $link-colour-hover;
+  }
 }
 
 .sr-only {
@@ -56,6 +118,7 @@ footer {
   background: #f8f6f6;
   margin: 40px -20px 0;
   padding: 18px 20px;
+  text-align: center;
 
   p {
     color: #565656;
@@ -63,9 +126,9 @@ footer {
     font-weight: 300;
     line-height: 16px;
     margin: 0;
-    text-align: left;
 
-    a {
+    a,
+    a.btn {
       color: inherit;
     }
   }

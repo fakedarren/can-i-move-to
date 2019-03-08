@@ -1,6 +1,6 @@
 .cities {
   display: none;
-  height: 100vh;
+  min-height: 100vh;
   position: absolute;
   top: 0;
   width: 100vw;
@@ -51,7 +51,7 @@
 
   .pill {
     background: transparent;
-    border: 2px solid #3A53FF;
+    border: 2px solid $pill-colour;
     border-radius: 30px;
     display: inline-block;
     color: #000;
@@ -62,10 +62,16 @@
     line-height: 41px;
     margin: 0 10px 10px 0;
     padding: 0 30px;
+    cursor: pointer;
+    transition: $default-transition;
+
+
+    &.selected, &:hover, &:focus {
+      background-color: $pill-colour;
+      color: #fff;
+    }
 
     &.selected {
-      background: #3A53FF;
-      color: #fff;
       font-weight: 400;
       margin: 0 0 20px;
     }

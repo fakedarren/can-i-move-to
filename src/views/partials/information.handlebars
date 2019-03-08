@@ -17,49 +17,63 @@
     </li>
   </ul>
   <h1>
-    <span class="sr-only">Can I move to <span data-ui="city">{{city}}</span>?</span> Yes.
+    <span class="sr-only">Can I move to ?</span>
   </h1>
   <div class="copy">
-    <h3>You can still move to <span data-ui="city">{{city}}</span>.</h3>
-    <p>Right now, as a UK and EU citizen, no matter your age, income or working status, you can go and live in any European city you choose. You can be a local in Lanzarote or a neighbour in Nice. All of Europe is your home.</p>
+    <h2 class="header-text">
+      <span class="very-large-text">Yes</span>
+      You can still move<br />to <button
+        class="choose-city"
+        data-behaviour="go-to-splash"
+        type="button"
+      >
+        <span data-ui="city">{{city}}</span>
+      </button>
+    </h2>
+    <p class="restricted-width">Right now, as a UK and EU citizen, no matter your age, income or working status, you can go and live in any European city you choose. You can be a local in Lanzarote or a neighbour in Nice. All of Europe is your home.</p>
     <h3>If Brexit goes ahead, all this will change.</h3>
-    <p>Just as the government wants to stop our European neighbours from making the UK their home, our opportunity to move abroad will be taken away. After Brexit, there will be new rules for moving to the EU, like needing to earn a minimum of £30,000/year. That’s a privilege for a few people, not a right for everyone.</p>
+    <p>Just as the government wants to stop our European neighbours from making the UK their home, our opportunity to move abroad will be taken away. If Brexit happens, there would be new rules for moving to the EU, like needing to earn a minimum salary. The UK has said this would be £30,000/year for EU citizens coming here, and it‘s likely it would be similar for us going abroad. That’s a privilege for a few people, not a right for everyone.</p>
     <h3>Don't let them take it away</h3>
-    <p>If you want to be able to keep your European citizenship and the amazing freedom and multiculturalism it brings, share this site and help us to stop Brexit.</p>
-    {{!<button
-      class="btn i-want-to-join"
-      data-behaviour="go-to-sign-up"
-      href="https://www.bestforbritain.org/join"
-    >
-      Sign up to fight Brexit >
-    </button>}}
-    <a
-      class="btn i-want-to-tweet"
-      data-dnt="true"
-      href="https://twitter.com/intent/tweet?text={{tweet-content}}"
-      target="_blank"
-    >
-      Share on Twitter
-    </a>
-    <a
-      class="btn i-want-to-share"
-      data-dnt="true"
-      href="https://www.facebook.com/sharer?u=https%3A%2F%2Fcanimovetobarcelona.com"
-      target="_blank"
-    >
-      Share on Facebook
-    </a>
-    <br />
-    <br />
-    <p>Or, let your MP know how you feel by sending a simple, 60-second message using FinalSay app!</p>
-    <a
-      class="btn i-want-to-say"
-      data-dnt="true"
-      href="https://finalsay.app"
-      target="_blank"
-    >
-      Record a voice message
-    </a>
+    <p class="restricted-width">If you want to be able to keep your European citizenship and the amazing freedom and multiculturalism it brings, share this site and help us to stop Brexit.</p>
+    <div class="share">
+      {{!<button
+        class="btn i-want-to-join"
+        data-behaviour="go-to-sign-up"
+        href="https://www.bestforbritain.org/join"
+      >
+        Sign up to fight Brexit >
+      </button>}}
+      <a
+        class="btn i-want-to-tweet"
+        data-dnt="true"
+        href="https://twitter.com/intent/tweet?text={{tweet-content}}"
+        target="_blank"
+      >
+        <img src="/img/icon-twitter.svg" alt="" aria-hidden="true" />
+        Share on Twitter
+      </a>
+      <a
+        class="btn i-want-to-share"
+        data-dnt="true"
+        href="https://www.facebook.com/sharer?u=https%3A%2F%2Fcanimovetobarcelona.com"
+        target="_blank"
+      >
+        <img src="/img/icon-facebook.svg" alt="" aria-hidden="true" />
+        Share on Facebook
+      </a>
+      <br />
+      <br />
+      <p>Or, let your MP know how you feel by sending a simple, 60-second message using FinalSay app!</p>
+      <a
+        class="btn i-want-to-say"
+        data-dnt="true"
+        href="https://finalsay.app"
+        target="_blank"
+      >
+        <img src="/img/icon-finalsay.svg" alt="" aria-hidden="true" />
+        Record a voice message
+      </a>
+    </div>
   </div>
   {{> who}}
 </div>

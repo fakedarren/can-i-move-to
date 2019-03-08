@@ -72,6 +72,15 @@ $(function(){
 
 /* INFORMATION */
 $(function(){
+  $('[data-behaviour="go-to-splash"]').on('click touchstart', function(evt){
+    evt.preventDefault();
+
+    $('.information').css('display', 'none');
+    $('.splash').css('display', 'flex');
+
+    window.scrollTo(0, 0);
+  });
+
   $('[data-behaviour="go-to-sign-up"]').on('click touchstart', function(evt){
     evt.preventDefault();
 

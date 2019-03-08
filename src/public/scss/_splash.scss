@@ -6,6 +6,7 @@
 
   h1 {
     margin: 0 0 50px;
+    font-size: $splash-heading;
   }
 
   .copy {
@@ -16,6 +17,10 @@
 
   .buttons {
     margin: 40px auto 0;
+  }
+
+  .take-action {
+    font-size: 20px;
   }
 
   .icon-btn {
@@ -30,12 +35,12 @@
     padding: 0;
 
     &.fb-btn {
-      background: url('/img/facebook.png') no-repeat 50%;
+      background: url('/img/circle-facebook.svg') no-repeat 50%;
       background-size: contain;
     }
 
     &.twitter-btn {
-      background: url('/img/twitter.png') no-repeat 50%;
+      background: url('/img/circle-twitter.svg') no-repeat 50%;
       background-size: contain;
     }
 
@@ -53,24 +58,6 @@
     }
   }
 }
-
-.choose-city {
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid currentColor;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: 300;
-  padding: 0;
-  text-shadow: 0 0 8px #fff;
-
-  &:focus,
-  &:hover {
-    color: #3A53FF;
-  }
-}
-
 
 @media (min-width: 768px) {
   .splash {
