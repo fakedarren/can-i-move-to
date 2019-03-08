@@ -43,7 +43,7 @@ a {
   color: #fff;
   display: inline-block;
   font-family: Lato, sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1;
   min-width: 180px;
   max-width: 260px;
@@ -164,48 +164,36 @@ footer {
   .information .i-want-to-join {
     height: 44px;
     line-height: 42px;
-    padding: 0 30px;
     text-decoration: none;
     width: 100%; }
 
-.i-want-to-share {
-  background: #4267b2 url("/img/facebook.png") no-repeat 6px 50%;
-  background-size: 25px;
+.share .btn {
   color: #fff;
   height: 44px;
   line-height: 42px;
   margin-top: 15px;
-  padding: 0 30px;
   text-decoration: none;
-  width: 100%; }
-  .i-want-to-share:hover, .i-want-to-share:focus {
-    background-color: #34518d; }
-
-.i-want-to-tweet {
-  background: #1da1f2 url("/img/twitter.png") no-repeat 6px 50%;
-  background-size: 25px;
-  color: #fff;
-  height: 44px;
-  line-height: 42px;
-  margin-top: 15px;
-  padding: 0 30px;
-  text-decoration: none;
-  width: 100%; }
-  .i-want-to-tweet:hover, .i-want-to-tweet:focus {
-    background-color: #0c85d0; }
-
-.i-want-to-say {
-  background: #ef4f4d url("/img/finalsay.png") no-repeat 8px 50%;
-  background-size: 25px;
-  color: #fff;
-  height: 44px;
-  line-height: 42px;
-  margin-top: 15px;
-  padding: 0 30px;
-  text-decoration: none;
-  width: 100%; }
-  .i-want-to-say:hover, .i-want-to-say:focus {
-    background-color: #eb211e; }
+  width: 100%;
+  padding: 0 20px;
+  vertical-align: middle; }
+  .share .btn.i-want-to-share {
+    background-color: #4267b2; }
+    .share .btn.i-want-to-share:hover, .share .btn.i-want-to-share:focus {
+      background-color: #34518d; }
+  .share .btn.i-want-to-tweet {
+    background-color: #1da1f2; }
+    .share .btn.i-want-to-tweet:hover, .share .btn.i-want-to-tweet:focus {
+      background-color: #0c85d0; }
+  .share .btn.i-want-to-say {
+    background-color: #ef4f4d; }
+    .share .btn.i-want-to-say:hover, .share .btn.i-want-to-say:focus {
+      background-color: #eb211e; }
+  .share .btn img {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: -4px 14px 0 0;
+    vertical-align: middle; }
 
 .polaroids {
   bottom: 0;
