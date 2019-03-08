@@ -375,10 +375,10 @@ footer {
     min-width: 0;
     padding: 0; }
     .splash .icon-btn.fb-btn {
-      background: url("/img/facebook.png") no-repeat 50%;
+      background: url("/img/circle-facebook.svg") no-repeat 50%;
       background-size: contain; }
     .splash .icon-btn.twitter-btn {
-      background: url("/img/twitter.png") no-repeat 50%;
+      background: url("/img/circle-twitter.svg") no-repeat 50%;
       background-size: contain; }
     .splash .icon-btn:last-child {
       margin-right: 0; }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="50" height="50" viewBox="0, 0, 50, 50">
+  <g id="Twitter-share-logo" transform="translate(0, 0)">
+    <path d="M50,25 C50,38.807 38.807,50 25,50 C11.193,50 -0,38.807 -0,25 C-0,11.193 11.193,-0 25,-0 C38.807,-0 50,11.193 50,25 z" fill="#4267B2" id="Oval"/>
+    <path d="M27.407,40.841 L27.407,26.409 L32.235,26.409 L32.956,20.76 L27.407,20.76 L27.407,17.163 C27.407,15.529 27.86,14.422 30.182,14.422 L33.147,14.422 L33.147,9.377 C31.717,9.228 30.28,9.155 28.842,9.159 C24.576,9.159 21.668,11.784 21.668,16.603 L21.668,20.76 L16.853,20.76 L16.853,26.409 L21.668,26.409 L21.668,40.841 L27.407,40.841 z" fill="#FFFFFF" id="f"/>
+  </g>
+</svg>
