@@ -40,7 +40,7 @@ $(function(){
 $(function(){
   $('.cities .list-item[data-city="Barcelona"]').css('display', 'none');
 
-  $('.cities .list button').on('click touchstart', function(evt){
+  $('.cities .list button').on('click', function(evt){
     evt.preventDefault();
 
     const selected = $(this).text();
@@ -60,7 +60,7 @@ $(function(){
     window.scrollTo(0, 0);
   });
 
-  $('[data-behaviour="close-cities"]').on('click touchstart', function(evt){
+  $('[data-behaviour="close-cities"]').on('click', function(evt){
     evt.preventDefault();
 
     $('.cities').css('display', 'none');
