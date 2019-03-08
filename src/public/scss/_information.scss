@@ -28,53 +28,50 @@
   .i-want-to-join {
     height: 44px;
     line-height: 42px;
-    padding: 0 30px;
     text-decoration: none;
     width: 100%;
   }
 }
 
-.i-want-to-share {
-  background: $facebook-brand-colour url('/img/facebook.png') no-repeat 6px 50%;
-  background-size: 25px;
-  color: #fff;
-  height: 44px;
-  line-height: 42px;
-  margin-top: 15px;
-  padding: 0 30px;
-  text-decoration: none;
-  width: 100%;
-  &:hover, &:focus {
-    background-color: $facebook-brand-colour-hover;
-  }
-}
+.share {
 
-.i-want-to-tweet {
-  background: $twitter-brand-colour url('/img/twitter.png') no-repeat 6px 50%;
-  background-size: 25px;
-  color: #fff;
-  height: 44px;
-  line-height: 42px;
-  margin-top: 15px;
-  padding: 0 30px;
-  text-decoration: none;
-  width: 100%;
-  &:hover, &:focus {
-    background-color: $twitter-brand-colour-hover;
-  }
-}
+  .btn {
+    color: #fff;
+    height: 44px;
+    line-height: 42px;
+    margin-top: 15px;
+    text-decoration: none;
+    width: 100%;
+    padding: 0 20px;
+    vertical-align: middle;
 
-.i-want-to-say {
-  background: $cta-colour url('/img/finalsay.png') no-repeat 8px 50%;
-  background-size: 25px;
-  color: #fff;
-  height: 44px;
-  line-height: 42px;
-  margin-top: 15px;
-  padding: 0 30px;
-  text-decoration: none;
-  width: 100%;
-  &:hover, &:focus {
-    background-color: $cta-colour-hover;
+    &.i-want-to-share {
+      background-color: $facebook-brand-colour;
+      &:hover, &:focus {
+        background-color: $facebook-brand-colour-hover;
+      }
+    }
+
+    &.i-want-to-tweet {
+      background-color: $twitter-brand-colour;
+      &:hover, &:focus {
+        background-color: $twitter-brand-colour-hover;
+      }
+    }
+
+    &.i-want-to-say {
+      background-color: $cta-colour;
+      &:hover, &:focus {
+        background-color: $cta-colour-hover;
+      }
+    }
+
+    img {
+      display: inline-block;
+      width: auto;
+      height: auto;
+      margin: -4px 14px 0 0;
+      vertical-align: middle;
+    }
   }
 }
