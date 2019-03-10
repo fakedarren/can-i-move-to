@@ -157,6 +157,8 @@ footer {
     .information .header-text .very-large-text {
       display: block;
       font-size: 38px; }
+  .information .body-text {
+    text-align: left; }
   .information .restricted-width {
     max-width: 420px;
     margin-left: auto;
@@ -194,6 +196,12 @@ footer {
     height: auto;
     margin: -4px 14px 0 0;
     vertical-align: middle; }
+
+@media (min-width: 960px) {
+  .information {
+    /* reflow body text to center on desktop */ }
+    .information .body-text {
+      text-align: center; } }
 
 .polaroids {
   bottom: 0;

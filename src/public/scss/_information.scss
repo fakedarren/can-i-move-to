@@ -19,6 +19,10 @@
     }
   }
 
+  .body-text {
+    text-align: left;
+  }
+
   .restricted-width {
     max-width: 420px;
     margin-left: auto;
@@ -72,6 +76,16 @@
       height: auto;
       margin: -4px 14px 0 0;
       vertical-align: middle;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .information {
+    
+    /* reflow body text to center on desktop */
+    .body-text {
+      text-align: center;
     }
   }
 }
