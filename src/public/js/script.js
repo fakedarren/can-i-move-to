@@ -21,7 +21,7 @@ window.onpopstate = function(event) {
 $(function(){
   $('[data-behaviour="go-to-choose-city"]').on('click touchstart', function(evt){
     evt.preventDefault();
-  
+
     $('.information').css('display', 'none');
     $('.splash').css('display', 'flex');
     $('.cities').css('display', 'flex');
@@ -29,7 +29,7 @@ $(function(){
 
   $('[data-behaviour="go-to-information"]').on('click touchstart', function(evt){
     evt.preventDefault();
-  
+
     $('.splash').css('display', 'none');
     $('.information').css('display', 'block');
 
@@ -99,5 +99,23 @@ $(function(){
       email: $('[name="email"]').val(),
       name: $('[name="name"]').val(),
     });;
+  });
+});
+
+/* Show Privacy*/
+$(function(){
+  $('[data-behaviour="show-privacy"]').on('click touchstart', function(evt){
+    evt.preventDefault();
+    $('.privacy-policy').css('display', 'block');
+    window.scrollTo(0, 0);
+  });
+});
+
+/* Close Privacy*/
+$(function(){
+  $('[data-behaviour="close-privacy"]').on('click touchstart', function(evt){
+    evt.preventDefault();
+    $('.privacy-policy').css('display', 'none');
+    window.scrollTo(0, 0);
   });
 });
