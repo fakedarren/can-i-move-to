@@ -120,6 +120,10 @@
       vertical-align: middle;
     }
   }
+
+  p {
+    text-align: left;
+  }
 }
 
 @media (min-width: 960px) {
@@ -128,6 +132,13 @@
     /* reflow body text to center on desktop */
     .body-text {
       text-align: center;
+    }
+
+    /* reflow share text to center on desktop */
+    .share {
+      p {
+        text-align: center;
+      }
     }
   }
 }

@@ -230,10 +230,16 @@ footer {
     margin: -4px 14px 0 0;
     vertical-align: middle; }
 
+.share p {
+  text-align: left; }
+
 @media (min-width: 960px) {
   .information {
-    /* reflow body text to center on desktop */ }
+    /* reflow body text to center on desktop */
+    /* reflow share text to center on desktop */ }
     .information .body-text {
+      text-align: center; }
+    .information .share p {
       text-align: center; } }
 
 .polaroids {
