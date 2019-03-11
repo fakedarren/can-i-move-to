@@ -233,7 +233,7 @@ footer {
 .share p {
   text-align: left; }
 
-@media (min-width: 960px) {
+@media (min-width: 768px) {
   .information {
     /* reflow body text to center on desktop */
     /* reflow share text to center on desktop */ }

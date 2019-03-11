@@ -126,7 +126,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $narrow-breakpoint) {
   .information {
 
     /* reflow body text to center on desktop */
