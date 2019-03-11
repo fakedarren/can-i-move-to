@@ -65,12 +65,6 @@
     text-align: left;
   }
 
-  .restricted-width {
-    max-width: 420px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .i-want-to-join {
     height: 44px;
     line-height: 42px;
@@ -139,6 +133,13 @@
       p {
         text-align: center;
       }
+    }
+
+    /* Restricted width only when text centered */
+    .restricted-width {
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

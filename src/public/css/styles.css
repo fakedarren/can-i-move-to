@@ -192,10 +192,6 @@ footer {
         background-color: #3a53ff; }
   .information .body-text {
     text-align: left; }
-  .information .restricted-width {
-    max-width: 420px;
-    margin-left: auto;
-    margin-right: auto; }
   .information .i-want-to-join {
     height: 44px;
     line-height: 42px;
@@ -236,11 +232,16 @@ footer {
 @media (min-width: 768px) {
   .information {
     /* reflow body text to center on desktop */
-    /* reflow share text to center on desktop */ }
+    /* reflow share text to center on desktop */
+    /* Restricted width only when text centered */ }
     .information .body-text {
       text-align: center; }
     .information .share p {
-      text-align: center; } }
+      text-align: center; }
+    .information .restricted-width {
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto; } }
 
 .polaroids {
   bottom: 0;
