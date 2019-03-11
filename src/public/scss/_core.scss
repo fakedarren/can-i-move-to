@@ -26,6 +26,9 @@ $default-transition: all 0.2s ease-in;
 $content-max-width: 490px;
 $button-max-width: 260px;
 
+$narrow-breakpoint: 768px;
+$wide-breakpoint: 1200px;
+
 *, *:before, *:after {
   box-sizing: border-box;
 }

@@ -74,9 +74,9 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: $narrow-breakpoint) {
   .polaroids {
-  
+
     .polaroid,
     .polaroid:nth-child(1),
     .polaroid:nth-child(2),
@@ -112,7 +112,7 @@
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: $wide-breakpoint) {
   .polaroids {
 
     .polaroid:nth-child(9),

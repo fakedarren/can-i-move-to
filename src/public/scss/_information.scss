@@ -61,10 +61,8 @@
     }
   }
 
-  .restricted-width {
-    max-width: 420px;
-    margin-left: auto;
-    margin-right: auto;
+  .body-text {
+    text-align: left;
   }
 
   .i-want-to-join {
@@ -114,6 +112,34 @@
       height: auto;
       margin: -4px 14px 0 0;
       vertical-align: middle;
+    }
+  }
+
+  p {
+    text-align: left;
+  }
+}
+
+@media (min-width: $narrow-breakpoint) {
+  .information {
+
+    /* reflow body text to center on desktop */
+    .body-text {
+      text-align: center;
+    }
+
+    /* reflow share text to center on desktop */
+    .share {
+      p {
+        text-align: center;
+      }
+    }
+
+    /* Restricted width only when text centered */
+    .restricted-width {
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
