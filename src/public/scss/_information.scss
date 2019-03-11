@@ -12,10 +12,52 @@
   .header-text {
     font-size: $large-heading;
     font-weight: 700;
+    margin: 26px auto 18px;
 
     .very-large-text {
       display: block;
       font-size: $splash-heading;
+    }
+  }
+
+  .actions {
+    margin: 0 auto 28px;
+
+    .outer-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      appearance: none;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      margin: 0 auto;
+      padding: 0;
+
+      .inner-btn {
+        background-color: #fff;
+        border: 1px solid $pill-colour;
+        border-radius: 30px;
+        color: $pill-colour;
+        font-family: $font-family;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 25px;
+        margin: 0;
+        padding: 0 15px;
+        transition: $default-transition;
+      }
+
+      /* Hover state applying to inner button */
+      &:hover,
+      &:focus {
+        .inner-btn {
+          color: #fff;
+          background-color: $pill-colour;
+        }
+      }
     }
   }
 
@@ -82,7 +124,7 @@
 
 @media (min-width: 960px) {
   .information {
-    
+
     /* reflow body text to center on desktop */
     .body-text {
       text-align: center;

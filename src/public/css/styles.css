@@ -34,7 +34,7 @@ a {
   color: #0042c5;
   transition: all 0.2s ease-in; }
   a:hovernot(.btn), a:focusnot(.btn) {
-    color: #3b53ff; }
+    color: #3a53ff; }
 
 .btn {
   background-color: #ff0164;
@@ -67,7 +67,7 @@ a {
   cursor: pointer;
   transition: all 0.2s ease-in; }
   .choose-city:hover, .choose-city:focus {
-    color: #3b53ff; }
+    color: #3a53ff; }
 
 .sr-only {
   left: -9999px;
@@ -123,7 +123,7 @@ footer {
       right: -10px; }
   .cities .pill {
     background: transparent;
-    border: 2px solid #3b53ff;
+    border: 2px solid #3a53ff;
     border-radius: 30px;
     display: inline-block;
     color: #000;
@@ -137,7 +137,7 @@ footer {
     cursor: pointer;
     transition: all 0.2s ease-in; }
     .cities .pill.selected, .cities .pill:hover, .cities .pill:focus {
-      background-color: #3b53ff;
+      background-color: #3a53ff;
       color: #fff; }
     .cities .pill.selected {
       font-weight: 400;
@@ -153,10 +153,43 @@ footer {
     z-index: 2; }
   .information .header-text {
     font-size: 32px;
-    font-weight: 700; }
+    font-weight: 700;
+    margin: 26px auto 18px; }
     .information .header-text .very-large-text {
       display: block;
       font-size: 38px; }
+  .information .actions {
+    margin: 0 auto 28px; }
+    .information .actions .outer-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      margin: 0 auto;
+      padding: 0;
+      /* Hover state applying to inner button */ }
+      .information .actions .outer-btn .inner-btn {
+        background-color: #fff;
+        border: 1px solid #3a53ff;
+        border-radius: 30px;
+        color: #3a53ff;
+        font-family: Lato, sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 25px;
+        margin: 0;
+        padding: 0 15px;
+        transition: all 0.2s ease-in; }
+      .information .actions .outer-btn:hover .inner-btn, .information .actions .outer-btn:focus .inner-btn {
+        color: #fff;
+        background-color: #3a53ff; }
   .information .body-text {
     text-align: left; }
   .information .restricted-width {

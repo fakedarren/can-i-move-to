@@ -22,14 +22,18 @@
   <div class="copy">
     <h2 class="header-text">
       <span class="very-large-text">Yes</span>
-      You can still move<br />to <button
-        class="choose-city"
+      You can still move<br />to
+        <span data-ui="city">{{city}}</span>
+    </h2>
+    <div class="actions">
+      <button
+        class="outer-btn"
         data-behaviour="go-to-choose-city"
         type="button"
       >
-        <span data-ui="city">{{city}}</span>
+        <span class="inner-btn">Choose another city</span>
       </button>
-    </h2>
+    </div>
     <div class="body-text">
       <p class="restricted-width">Right now, as a UK and EU citizen, no matter your age, income or working status, you can go and live in any European city you choose. You can be a local in Lanzarote or a neighbour in Nice. All of Europe is your home.</p>
       <h3>If Brexit goes ahead, all this will change.</h3>
