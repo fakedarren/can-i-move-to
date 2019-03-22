@@ -45,6 +45,14 @@ body {
   text-align: center;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  &.img-block {
+    width: 100%;
+  }
+}
+
 h1 {
   font-size: $large-heading;
   font-weight: 700;

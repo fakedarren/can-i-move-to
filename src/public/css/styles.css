@@ -15,6 +15,12 @@ body {
   font-family: Lato, sans-serif;
   text-align: center; }
 
+img {
+  max-width: 100%;
+  height: auto; }
+  img.img-block {
+    width: 100%; }
+
 h1 {
   font-size: 32px;
   font-weight: 700;
@@ -192,6 +198,14 @@ footer {
         background-color: #3a53ff; }
   .information .body-text {
     text-align: left; }
+  .information .with-arrow {
+    padding: 0 32px 0 0;
+    margin: 0 auto;
+    min-height: 52px;
+    background: transparent url(/img/cta-down-arrow.svg) no-repeat bottom 0 right 12px;
+    background-size: 18px 42px; }
+  .information .hey-mp {
+    margin: 0 -12px; }
   .information .i-want-to-join {
     height: 44px;
     line-height: 42px;
@@ -232,10 +246,18 @@ footer {
 @media (min-width: 768px) {
   .information {
     /* reflow body text to center on desktop */
+    /* Reset HeyMP to 308px */
     /* reflow share text to center on desktop */
     /* Restricted width only when text centered */ }
     .information .body-text {
       text-align: center; }
+    .information .with-arrow {
+      max-width: inherit;
+      background-position: bottom 0 right 16px;
+      padding-bottom: 32px;
+      margin: 0 0 -24px; }
+    .information img.hey-mp {
+      max-width: 308px; }
     .information .share p {
       text-align: center; }
     .information .restricted-width {
