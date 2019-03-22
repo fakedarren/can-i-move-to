@@ -59,45 +59,7 @@
         </a>
       </div>
     </div>
-    <div class="share">
-      {{!<button
-        class="btn i-want-to-join"
-        data-behaviour="go-to-sign-up"
-        href="https://www.bestforbritain.org/join"
-      >
-        Sign up to fight Brexit >
-      </button>}}
-      <a
-        class="btn i-want-to-tweet"
-        data-dnt="true"
-        href="https://twitter.com/intent/tweet?text={{tweet-content}}"
-        target="_blank"
-      >
-        <img src="/img/icon-twitter.svg" alt="" aria-hidden="true" />
-        Share on Twitter
-      </a>
-      <a
-        class="btn i-want-to-share"
-        data-dnt="true"
-        href="https://www.facebook.com/sharer?u=https%3A%2F%2Fcanimovetobarcelona.com"
-        target="_blank"
-      >
-        <img src="/img/icon-facebook.svg" alt="" aria-hidden="true" />
-        Share on Facebook
-      </a>
-      <br />
-      <br />
-      <p class="restricted-width">Or, let your MP know how you feel by sending a simple, 60-second message using FinalSay app!</p>
-      <a
-        class="btn i-want-to-say"
-        data-dnt="true"
-        href="https://finalsay.app"
-        target="_blank"
-      >
-        <img src="/img/icon-finalsay.svg" alt="" aria-hidden="true" />
-        Record a voice message
-      </a>
-    </div>
+    {{> social}}
   </div>
   {{> who}}
 </div>
