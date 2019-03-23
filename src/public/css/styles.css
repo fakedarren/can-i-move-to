@@ -205,6 +205,8 @@ footer {
     .information .header-text .very-large-text {
       display: block;
       font-size: 38px; }
+  .information h3 {
+    font-size: 22px; }
   .information .actions {
     margin: 0 auto 28px; }
     .information .actions .outer-btn {
