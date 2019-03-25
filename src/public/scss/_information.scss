@@ -20,6 +20,10 @@
     }
   }
 
+  h3 {
+    font-size: $main-heading;
+  }
+
   .actions {
     margin: 0 auto 28px;
 
@@ -63,6 +67,18 @@
 
   .body-text {
     text-align: left;
+  }
+
+  .with-arrow {
+    padding: 0 32px 0 0;
+    margin: 0 auto;
+    min-height: 52px;
+    background: transparent url(/img/cta-down-arrow.svg) no-repeat bottom 0 right 12px;
+    background-size: 18px 42px;
+  }
+
+  .hey-mp {
+    margin: 0 -12px;
   }
 
   .i-want-to-join {
@@ -126,6 +142,18 @@
     /* reflow body text to center on desktop */
     .body-text {
       text-align: center;
+    }
+
+    .with-arrow {
+      max-width: inherit;
+      background-position: bottom 0 right 16px;
+      padding-bottom: 32px;
+      margin: 0 0 -24px;
+    }
+
+    /* Reset HeyMP to 308px */
+    img.hey-mp {
+      max-width: 308px;
     }
 
     /* reflow share text to center on desktop */

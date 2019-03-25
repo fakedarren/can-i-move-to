@@ -4,6 +4,7 @@
 $font-family: Lato, sans-serif;
 $splash-heading: 38px;
 $large-heading: 32px;
+$main-heading: 22px;
 $button-font-size: 17px;
 
 $link-colour: #0042c5;
@@ -43,6 +44,14 @@ body {
   background: #fff;
   font-family: $font-family;
   text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  &.img-block {
+    width: 100%;
+  }
 }
 
 h1 {

@@ -15,57 +15,11 @@
     z-index: 100;
   }
 
-  .buttons {
+  .social {
     margin: 40px auto 0;
   }
 
   .take-action {
     font-size: 20px;
-  }
-
-  .icon-btn {
-    position: relative;
-    display: inline-block;
-    text-indent: -9999px;
-    font-weight: 300;
-    width: 38px;
-    height: 38px;
-    margin-right: 15px;
-    min-width: 0;
-    padding: 0;
-
-    &.fb-btn {
-      background: url('/img/circle-facebook.svg') no-repeat 50%;
-      background-size: contain;
-    }
-
-    &.twitter-btn {
-      background: url('/img/circle-twitter.svg') no-repeat 50%;
-      background-size: contain;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
-
-    a {
-      bottom: 0;
-      display: block;
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-  }
-}
-
-@media (min-width: $narrow-breakpoint) {
-  .splash {
-
-    .icon-btn {
-      height: 50px;
-      vertical-align: middle;
-      width: 50px;
-    }
   }
 }

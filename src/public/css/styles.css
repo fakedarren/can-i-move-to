@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/** Global Styles */
 /**
  * Variables
  */
@@ -14,6 +15,12 @@ body {
   background: #fff;
   font-family: Lato, sans-serif;
   text-align: center; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+  img.img-block {
+    width: 100%; }
 
 h1 {
   font-size: 32px;
@@ -88,6 +95,46 @@ footer {
     footer p a.btn {
       color: inherit; }
 
+/** Component Styles */
+.social {
+  margin-top: 30px; }
+  .social .icon-btn {
+    position: relative;
+    display: inline-block;
+    text-indent: -9999px;
+    font-weight: 300;
+    width: 38px;
+    height: 38px;
+    margin-right: 15px;
+    min-width: 0;
+    padding: 0; }
+    .social .icon-btn.fb-btn {
+      background: url("/img/circle-facebook.svg") no-repeat 50%;
+      background-size: contain; }
+    .social .icon-btn.twitter-btn {
+      background: url("/img/circle-twitter.svg") no-repeat 50%;
+      background-size: contain; }
+    .social .icon-btn.instagram-btn {
+      background: url("/img/icon-instagram.svg") no-repeat 50%;
+      background-size: contain;
+      border-radius: 0; }
+    .social .icon-btn:last-child {
+      margin-right: 0; }
+    .social .icon-btn a {
+      bottom: 0;
+      display: block;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0; }
+
+@media (min-width: 768px) {
+  .social .icon-btn {
+    height: 50px;
+    vertical-align: middle;
+    width: 50px; } }
+
+/** Page Styles */
 .cities {
   display: none;
   min-height: 100vh;
@@ -158,6 +205,8 @@ footer {
     .information .header-text .very-large-text {
       display: block;
       font-size: 38px; }
+  .information h3 {
+    font-size: 22px; }
   .information .actions {
     margin: 0 auto 28px; }
     .information .actions .outer-btn {
@@ -192,6 +241,14 @@ footer {
         background-color: #3a53ff; }
   .information .body-text {
     text-align: left; }
+  .information .with-arrow {
+    padding: 0 32px 0 0;
+    margin: 0 auto;
+    min-height: 52px;
+    background: transparent url(/img/cta-down-arrow.svg) no-repeat bottom 0 right 12px;
+    background-size: 18px 42px; }
+  .information .hey-mp {
+    margin: 0 -12px; }
   .information .i-want-to-join {
     height: 44px;
     line-height: 42px;
@@ -232,10 +289,18 @@ footer {
 @media (min-width: 768px) {
   .information {
     /* reflow body text to center on desktop */
+    /* Reset HeyMP to 308px */
     /* reflow share text to center on desktop */
     /* Restricted width only when text centered */ }
     .information .body-text {
       text-align: center; }
+    .information .with-arrow {
+      max-width: inherit;
+      background-position: bottom 0 right 16px;
+      padding-bottom: 32px;
+      margin: 0 0 -24px; }
+    .information img.hey-mp {
+      max-width: 308px; }
     .information .share p {
       text-align: center; }
     .information .restricted-width {
@@ -408,41 +473,10 @@ footer {
     margin-top: -80px;
     padding: 0 30px;
     z-index: 100; }
-  .splash .buttons {
+  .splash .social {
     margin: 40px auto 0; }
   .splash .take-action {
     font-size: 20px; }
-  .splash .icon-btn {
-    position: relative;
-    display: inline-block;
-    text-indent: -9999px;
-    font-weight: 300;
-    width: 38px;
-    height: 38px;
-    margin-right: 15px;
-    min-width: 0;
-    padding: 0; }
-    .splash .icon-btn.fb-btn {
-      background: url("/img/circle-facebook.svg") no-repeat 50%;
-      background-size: contain; }
-    .splash .icon-btn.twitter-btn {
-      background: url("/img/circle-twitter.svg") no-repeat 50%;
-      background-size: contain; }
-    .splash .icon-btn:last-child {
-      margin-right: 0; }
-    .splash .icon-btn a {
-      bottom: 0;
-      display: block;
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0; }
-
-@media (min-width: 768px) {
-  .splash .icon-btn {
-    height: 50px;
-    vertical-align: middle;
-    width: 50px; } }
 
 .thanks {
   align-items: center;

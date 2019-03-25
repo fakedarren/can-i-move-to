@@ -37,50 +37,29 @@
     <div class="body-text">
       <p class="restricted-width">Right now, as a UK and EU citizen, no matter your age, income or working status, you can go and live in any European city you choose. You can be a local in Lanzarote or a neighbour in Nice. All of Europe is your home.</p>
       <h3>If Brexit goes ahead, all this will change.</h3>
-      <p>Whether we leave with a deal or or we crash out with no deal, Brexit means the end of freedom of movement. We’ll lose our right to live, work and retire in any EU country.</p>
+      <p>Whether it happens with a deal or we crash out with no deal, Brexit means the end of freedom of movement. We’ll lose our right to live, work and retire in any EU country.</p>
       <p>Just as the government wants to stop our European neighbours from making the UK their home, our opportunity to move abroad will be taken away. If Brexit happens, there would be new rules for moving to the EU, like needing to earn a minimum salary. The UK has said this would be £30,000/year for EU citizens coming here, and it‘s likely it would be similar for us going abroad. That’s a privilege for a few people, not a right for everyone.</p>
       <h3 class="restricted-width">Don't let them take it away</h3>
-      <p class="restricted-width">If you want to be able to keep your European citizenship and the amazing freedom and multiculturalism it brings, share this site and help us to stop Brexit.</p>
+      <p class="restricted-width">Let’s fight Brexit to keep our European citizenship and the amazing freedom and multiculturalism it brings!</p>
+      <p class="with-arrow">Message your MP directly with our super simple site, Hey MP: </p>
+      <div class="cta-block">
+        <a
+          href="https://hey-mp.uk?utm_source=canimovetobarcelona"
+          target="_blank"
+        >
+          <img
+            class="img-block hey-mp"
+            srcset="/img/heymp-box.png 308w, /img/heymp-box@2x.png 614w"
+            sizes="(max-width: 320px) 308px, 100vw"
+            src="/img/heymp-box.png"
+            width="308" height="262"
+            alt="Hey MP Button"
+            title="Search for your MP and send them a message"
+          />
+        </a>
+      </div>
     </div>
-    <div class="share">
-      {{!<button
-        class="btn i-want-to-join"
-        data-behaviour="go-to-sign-up"
-        href="https://www.bestforbritain.org/join"
-      >
-        Sign up to fight Brexit >
-      </button>}}
-      <a
-        class="btn i-want-to-tweet"
-        data-dnt="true"
-        href="https://twitter.com/intent/tweet?text={{tweet-content}}"
-        target="_blank"
-      >
-        <img src="/img/icon-twitter.svg" alt="" aria-hidden="true" />
-        Share on Twitter
-      </a>
-      <a
-        class="btn i-want-to-share"
-        data-dnt="true"
-        href="https://www.facebook.com/sharer?u=https%3A%2F%2Fcanimovetobarcelona.com"
-        target="_blank"
-      >
-        <img src="/img/icon-facebook.svg" alt="" aria-hidden="true" />
-        Share on Facebook
-      </a>
-      <br />
-      <br />
-      <p class="restricted-width">Or, let your MP know how you feel by sending a simple, 60-second message using FinalSay app!</p>
-      <a
-        class="btn i-want-to-say"
-        data-dnt="true"
-        href="https://finalsay.app"
-        target="_blank"
-      >
-        <img src="/img/icon-finalsay.svg" alt="" aria-hidden="true" />
-        Record a voice message
-      </a>
-    </div>
+    {{> social}}
   </div>
   {{> who}}
 </div>
