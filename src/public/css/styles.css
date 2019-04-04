@@ -369,6 +369,9 @@ footer {
     .polaroids .polaroid:nth-child(7), .polaroids .polaroid:nth-child(8), .polaroids .polaroid:nth-child(9), .polaroids .polaroid:nth-child(10) {
       display: none; }
 
+.information .polaroids .polaroid:nth-child(4), .information .polaroids .polaroid:nth-child(5), .information .polaroids .polaroid:nth-child(6), .information .polaroids .polaroid:nth-child(10) {
+  display: none; }
+
 @media (min-width: 768px) {
   .polaroids .polaroid,
   .polaroids .polaroid:nth-child(1),
