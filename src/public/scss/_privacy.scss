@@ -1,0 +1,54 @@
+.privacy-policy {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 102;
+  background-color: #fff;
+  padding: 0 15px;
+
+  .modal-header,
+  .modal-body {
+    position: relative;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .modal-header {
+    position: relative;
+
+    a.close-button {
+      position: fixed;
+      display: block;
+      top: 20px;
+      right: 0;
+      text-decoration: none;
+      color: #000;
+      font-size: 24px;
+    }
+  }
+
+  .modal-body {
+    .privacy-title {
+      .site-name {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 920px) {
+  .privacy-policy {
+    padding: 0 60px;
+
+    .modal-header {
+      a.close-button {
+        right: 40px;
+      }
+    }
+  }
+}
